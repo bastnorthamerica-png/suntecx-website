@@ -1,6 +1,0 @@
-{
-  "rewrites": [
-    { "source": "/", "destination": "/sublime/index.html" },
-    { "source": "/:path*", "destination": "/sublime/:path*" }
-  ]
-}

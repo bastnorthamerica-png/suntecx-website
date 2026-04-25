@@ -1,0 +1,42 @@
+.header-bar {
+  background: rgba(34, 34, 34, 0.8);
+}
+.bar-nav-dropdown {
+  background-color: #222;
+}
+
+.nav-anchor {
+  background: rgb(34, 34, 34);
+}
+
+.nav-anchor .nav-anchor-cont a {
+  background: #eaeaea;
+}
+.nav-anchor .nav-anchor-cont a.on {
+  background: #fff;
+  color: #111;
+}
+.bar-nav-menu span {
+  color: #fff;
+}
+.bar-nav-menu a,
+.bar-nav-menu h4 {
+  color: #fff;
+}
+.footer-bottom .icpbei:before {
+  content: "";
+  background: #fff;
+}
+
+@media screen and (max-width: 1023px) {
+  .bar-nav-mobile {
+    background: #222;
+  }
+  .bar-nav-menu span {
+    color: #fff;
+  }
+  .bar-nav-menu a,
+  .bar-nav-menu h4 {
+    color: #fff;
+  }
+}

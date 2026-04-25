@@ -1,0 +1,11 @@
+.bar-nav li {
+  padding: 0px 26px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1279px) and (min-width: 1024px) {
+  .bar-nav li {
+    padding: 0px 22px;
+    font-size: 12px;
+  }
+}

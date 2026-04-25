@@ -1,0 +1,1895 @@
+<!DOCTYPE html>
+            <html lang="en">
+            
+<!-- Mirrored from iot.ilifesmart.com/solutions/smart-hotel/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Apr 2026 01:08:57 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+                <title>Smart Hotel Solutions</title>
+                <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+                <meta name="description" content="Smart hotel solutions use intelligent technology to enhance the guest journey and streamline operations, leading to greater safety, efficiency, and energy savings.
+
+
+
+
+
+
+
+" >
+                <meta name="keywords" content="" >
+                <link rel="stylesheet" href="../../common.css" >
+                
+                
+                <link rel="stylesheet" href="index.css" >
+                <script src="../../lottie.min.js"></script>
+                <script src="../../jquery-3.6.0.min.js"></script>
+                <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag("consent", "default", {
+        ad_storage: "denied",
+        ad_user_data: "denied", 
+        ad_personalization: "denied",
+        analytics_storage: "denied",
+        functionality_storage: "denied",
+        personalization_storage: "denied",
+        security_storage: "granted",
+        wait_for_update: 2000,
+    });
+    gtag("set", "ads_data_redaction", true);
+    gtag("set", "url_passthrough", true);
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TPR34VN');</script>
+
+<!-- Start cookieyes banner --> 
+<script id="cookieyes" type="text/javascript" src="../../../cdn-cookieyes.com/client_data/076a5261762ead0ae6d640bb/script.js"></script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4411P1J138"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4411P1J138');
+
+  var ga_client_id = null; // 存储 GA Client ID
+  gtag("get", "G-4411P1J138", "client_id", function (clientId) {
+      if (clientId) {
+            ga_client_id = String(clientId);
+      }
+  });
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10841355507"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'AW-10841355507');
+</script>
+
+<script>
+    window.addEventListener('load', function (event) {
+        setTimeout(function () {
+            if (window.location.href.includes("../../other/Thank-you/index.html")) {
+                gtag('event', 'conversion', { 'send_to': 'AW-10841355507/U-uPCKvf55MbEPPpx7Eo' });
+            }
+        }, 5000);
+    });
+</script>
+
+<script>
+    function getVisitSourceData() {
+        const SESSION_STORAGE_KEY = 'visit_source_data';
+
+        try {
+            const storedData = sessionStorage.getItem(SESSION_STORAGE_KEY);
+            if (storedData) {
+                return JSON.parse(storedData);
+            }
+        } catch (e) {
+            console.warn('SessionStorage is not available.', e);
+        }
+
+        let category = "A"; // A: Direct/Other, B: Organic, C: Paid
+        let source = "direct";
+        let medium = "none";
+
+        const urlParams = new URLSearchParams(window.location.search);
+
+        const gclidParam = urlParams.get('gclid');
+        const fbclid = urlParams.get('fbclid');
+        const msclkid = urlParams.get('msclkid');
+        const dclid = urlParams.get('dclid');
+        const ttclid = urlParams.get('ttclid');
+
+        let gclid = gclidParam;
+        if (gclidParam) {
+            try {
+                const expiryDate = new Date().getTime() + 90 * 24 * 60 * 60 * 1000;
+                localStorage.setItem('gclid', JSON.stringify({ value: gclidParam, expiryDate }));
+            } catch (e) {
+                console.warn('LocalStorage is not available.', e);
+            }
+        } else {
+            try {
+                const gclidStorage = localStorage.getItem('gclid');
+                if (gclidStorage) {
+                    const parsedGclid = JSON.parse(gclidStorage);
+                    if (parsedGclid && new Date().getTime() < parsedGclid.expiryDate) {
+                        gclid = parsedGclid.value;
+                    }
+                }
+            } catch (e) {
+                console.warn('LocalStorage is not available. GCLID persistence is disabled.', e);
+            }
+        }
+
+        if (gclid) {
+            category = "C"; source = "google"; medium = "cpc";
+        } else if (fbclid) {
+            category = "C"; source = "facebook"; medium = "cpc";
+        } else if (msclkid) {
+            category = "C"; source = "microsoft"; medium = "cpc";
+        } else if (ttclid) {
+            category = "C"; source = "tiktok"; medium = "cpc";
+        } else if (dclid) {
+            category = "C"; source = "google_display"; medium = "display";
+        }
+
+        if (category !== "C") {
+            const utmSource = urlParams.get('utm_source');
+            const utmMedium = urlParams.get('utm_medium');
+            const utmCampaign = urlParams.get('utm_campaign');
+
+            if (utmSource || utmMedium || utmCampaign) {
+                const paidMediums = ['cpc', 'ppc', 'paidsearch', 'paid_search', 'display', 'banner', 'paid_social', 'ad', 'ads', 'retargeting', 'remarketing', 'affiliate', 'cpm', 'cpv', 'native'];
+                const paidKeywords = ['paid', 'cpc', 'ppc', 'promo', 'ad', 'campaign'];
+                const mediumStr = (utmMedium || '').toLowerCase();
+                const sourceStr = (utmSource || '').toLowerCase();
+                const campaignStr = (utmCampaign || '').toLowerCase();
+
+                if (mediumStr && paidMediums.includes(mediumStr)) {
+                    category = "C"; source = utmSource; medium = utmMedium;
+                } else if (paidKeywords.some(keyword => mediumStr.includes(keyword) || sourceStr.includes(keyword) || campaignStr.includes(keyword))) {
+                    category = "C"; source = utmSource || 'unknown_paid_source'; medium = utmMedium || 'paid';
+                }
+            }
+        }
+
+        if (category === "A") {
+
+            if (document.referrer) {
+                try {
+
+                    const getRootDomain = (hostname) => {
+                        const parts = hostname.split('.');
+                        return parts.length <= 2 ? hostname : parts.slice(-2).join('.');
+                    };
+
+                    const referrerUrl = new URL(../../index.html);
+                    const referrerHostname = referrerUrl.hostname;
+                    const currentHostname = window.location.hostname;
+
+                    if (getRootDomain(referrerHostname) !== getRootDomain(currentHostname)) {
+                        const searchEngines = {
+                            'google.': 'google', 'baidu.': 'baidu', 'bing.': 'bing',
+                            'yahoo.': 'yahoo', 'sogou.': 'sogou', 'so.com': '360',
+                            'duckduckgo.': 'duckduckgo', 'yandex.': 'yandex', 'sm.cn': 'shenma',
+                            'ecosia.org': 'ecosia', 'qwant.com': 'qwant', 'naver.com': 'naver',
+                            'seznam.cz': 'seznam'
+                        };
+                        const searchQueryParams = ['q', 'query', 'p', 'wd', 'text', 'keyword', 'k'];
+
+                        const referrerParams = referrerUrl.searchParams;
+                        let isOrganicSearch = false;
+                        let organicSource = referrerHostname;
+
+                        for (const domain in searchEngines) {
+                            if (referrerHostname.includes(domain)) {
+                                isOrganicSearch = true;
+                                organicSource = searchEngines[domain];
+                                break;
+                            }
+                        }
+
+                        if (!isOrganicSearch && searchQueryParams.some(param => referrerParams.has(param))) {
+                            isOrganicSearch = true;
+                        }
+
+                        if (isOrganicSearch) {
+                            category = "B";
+                            source = organicSource;
+                            medium = "organic";
+                        } else {
+                            category = "A";
+                            source = referrerHostname;
+                            medium = "referral";
+                        }
+                    }
+                } catch (e) {
+                    console.warn("Could not parse document.referrer:", document.referrer, e);
+                }
+            }
+        }
+
+        const result = {
+            visit_category: category,
+            visit_source: source,
+            visit_medium: medium
+        };
+
+        try {
+            sessionStorage.setItem(SESSION_STORAGE_KEY, JSON.stringify(result));
+        } catch (e) {
+            console.warn('SessionStorage is not available.', e);
+        }
+
+        return result;
+    }
+
+    getVisitSourceData();
+</script>
+
+                <style> 
+                    body {
+                        padding-top: 48px;
+                    }
+                    #header-iframe {
+                        height: 48px;
+                    }   
+                    body {background-color: #F7F7F7; color: #111111} 
+ a {color: #111111} 
+                            .sty-1-1 {
+                                
+                                background-image: url(../../resource/instance/%e9%80%9a%e6%a0%8f122_1750326738_00E813.webp);
+                            }
+                            .sty-1-1 .title {
+                                color: #ffffff;
+                            }
+                            .sty-1-1 .sub-title {
+                                color: #ffffff;
+                            }
+                        
+                            .sty-3-2 {
+                                background-image: url(../../resource/instance/Frame1597881392_1750390962_01D853.webp);
+                                
+                            }
+                            
+                            
+                        
+                            .sty-4-4 {
+                                
+                                
+                                
+                                
+                            }
+                            .sty-1-5 {
+                                background-color: #ffffff;
+                                background-image: url(../../resource/instance/%e9%80%9a%e6%a0%8f1_1750390950_39E9FD.webp);
+                            }
+                            
+                            
+                        
+                            .sty-3-6 {
+                                background-image: url(../../resource/instance/Frame7883_1750326838_00B69E.webp);
+                                
+                            }
+                            
+                            
+                        
+                            .sty-3-7 {
+                                background-image: url(../../resource/instance/Frame7883-1_1750326866_2487E3.webp);
+                                
+                            }
+                            
+                            
+                        
+                            .sty-3-8 {
+                                background-image: url(../../resource/instance/Frame7883-2_1750326959_F3E032.webp);
+                                
+                            }
+                            
+                            
+                        
+                            .sty-1-11 {
+                                background-color: #ffffff;
+                                background-image: url(../../resource/instance/%e9%80%9a%e6%a0%8f1-1_1750390982_F14195.webp);
+                            }
+                            
+                            
+                        
+                            .sty-3-13 {
+                                background-image: url(../../resource/instance/Frame7883-3_1750327013_7D646E.webp);
+                                
+                            }
+                            
+                            
+                        
+                            .sty-3-14 {
+                                background-image: url(../../resource/instance/Frame7883_1750327706_EEC52E.webp);
+                                
+                            }
+                            
+                            
+                        
+                            .sty-1-18 {
+                                background-color: #ffffff;
+                                background-image: url(../../resource/instance/%e9%80%9a%e6%a0%8f1-2_1750390997_F7F95B.webp);
+                            }
+                            
+                            
+                        
+                            .sty-3-19 {
+                                background-image: url(../../resource/instance/Frame7886_1750327110_B58E82.webp);
+                                
+                            }
+                            
+                            
+                        
+                            .sty-3-20 {
+                                background-image: url(../../resource/instance/Frame7883-5_1750327137_D5EFB9.webp);
+                                
+                            }
+                            
+                            
+                        
+                            .sty-1-23 {
+                                background-color: #ffffff;
+                                background-image: url(../../resource/instance/%e9%80%9a%e6%a0%8f1-3_1750391030_13F5AD.webp);
+                            }
+                            
+                            
+                        
+                            .sty-3-24 {
+                                background-image: url(../../resource/instance/Frame7883-6_1750327205_D76B2F.webp);
+                                
+                            }
+                            
+                            
+                        
+                            .sty-3-25 {
+                                background-image: url(../../resource/instance/Frame7883-7_1750327228_4C5487.webp);
+                                
+                            }
+                            
+                            
+                        
+                            .sty-4-28 {
+                                
+                                
+                                
+                                
+                            }
+                            .sty-3-29 {
+                                background-image: url(../../resource/instance/Frame1597881412_1750391019_49116D.webp);
+                                
+                            }
+                            
+                            
+                        .sty-28-100 .join { display: none;}
+                            #oversea-form-modal {
+                                background-color: rgba(0, 0, 0, 0.8);
+                                display: none;
+                            }
+                            .sty-28-100 {
+                                
+                                
+                            }
+                </style>
+                <style>
+                    @media screen and (min-width: 1280px){ 
+                            .sty-1-1 {
+                                
+                                
+                                
+                                
+                                
+                            }
+                        
+                            .sty-3-2 {
+                                background-size: 1260px 680px;
+                                background-position: center bottom;
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-2 {
+                                width: 1260px;
+                                height: 680px;
+                                top: bottom;
+                                left: center;
+                            }
+                            
+                            
+                        
+                            .sty-4-4 {
+                                
+                                
+                                
+                                
+                            }
+                            .sty-1-5 {
+                                
+                                background-size: 1260px 690px;
+                                
+                                
+                                
+                            }
+                        
+                            .sty-3-6 {
+                                background-size: 1260px 680px;
+                                background-position: center bottom;
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-6 {
+                                width: 1260px;
+                                height: 680px;
+                                top: bottom;
+                                left: center;
+                            }
+                            
+                            
+                        
+                            .sty-3-7 {
+                                background-size: 1260px 680px;
+                                background-position: center bottom;
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-7 {
+                                width: 1260px;
+                                height: 680px;
+                                top: bottom;
+                                left: center;
+                            }
+                            
+                            
+                        
+                            .sty-3-8 {
+                                background-size: 1260px 680px;
+                                background-position: center bottom;
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-8 {
+                                width: 1260px;
+                                height: 680px;
+                                top: bottom;
+                                left: center;
+                            }
+                            
+                            
+                        
+                            .sty-1-11 {
+                                
+                                background-size: 1260px 690px;
+                                
+                                
+                                
+                            }
+                        
+                            .sty-3-13 {
+                                background-size: 1260px 680px;
+                                background-position: center bottom;
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-13 {
+                                width: 1260px;
+                                height: 680px;
+                                top: bottom;
+                                left: center;
+                            }
+                            
+                            
+                        
+                            .sty-3-14 {
+                                background-size: 1260px 680px;
+                                background-position: center bottom;
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-14 {
+                                width: 1260px;
+                                height: 680px;
+                                top: bottom;
+                                left: center;
+                            }
+                            
+                            
+                        
+                            .sty-1-18 {
+                                
+                                background-size: 1260px 690px;
+                                
+                                
+                                
+                            }
+                        
+                            .sty-3-19 {
+                                background-size: 1260px 680px;
+                                background-position: center bottom;
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-19 {
+                                width: 1260px;
+                                height: 680px;
+                                top: bottom;
+                                left: center;
+                            }
+                            
+                            
+                        
+                            .sty-3-20 {
+                                background-size: 1260px 680px;
+                                background-position: center bottom;
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-20 {
+                                width: 1260px;
+                                height: 680px;
+                                top: bottom;
+                                left: center;
+                            }
+                            
+                            
+                        
+                            .sty-1-23 {
+                                
+                                background-size: 1260px 690px;
+                                
+                                
+                                
+                            }
+                        
+                            .sty-3-24 {
+                                background-size: 1260px 680px;
+                                background-position: center bottom;
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-24 {
+                                width: 1260px;
+                                height: 680px;
+                                top: bottom;
+                                left: center;
+                            }
+                            
+                            
+                        
+                            .sty-3-25 {
+                                background-size: 1260px 680px;
+                                background-position: center bottom;
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-25 {
+                                width: 1260px;
+                                height: 680px;
+                                top: bottom;
+                                left: center;
+                            }
+                            
+                            
+                        
+                            .sty-4-28 {
+                                
+                                
+                                
+                                
+                            }
+                            .sty-3-29 {
+                                background-size: 1260px 1848px;
+                                
+                                height: 1848px;
+                                margin-top: 120px;
+                                
+                            }
+                            .block-bl2 .absolut-29 {
+                                width: 1260px;
+                                height: 1848px;
+                                
+                                
+                            }
+                            
+                            
+                         }
+                </style>
+                <style>
+                    @media screen and (max-width: 1279px) and (min-width: 1024px){ 
+                            .sty-1-1 {
+                                
+                                
+                                
+                                
+                                
+                            }
+                        
+                            .sty-3-2 {
+                                background-size: 1008px 544px;
+                                background-position: center bottom;
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-2 {
+                                width: 1008px;
+                                height: 544px;
+                                top: bottom;
+                                left: center;
+                            }
+                            
+                        
+                            .sty-4-4 {
+                                
+                                
+                                
+                                
+                            }
+                            .sty-1-5 {
+                                
+                                background-size: 1008px 552px;
+                                
+                                
+                                
+                            }
+                        
+                            .sty-3-6 {
+                                background-size: 1008px 544px;
+                                background-position: center bottom;
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-6 {
+                                width: 1008px;
+                                height: 544px;
+                                top: bottom;
+                                left: center;
+                            }
+                            
+                        
+                            .sty-3-7 {
+                                background-size: 1008px 544px;
+                                background-position: center bottom;
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-7 {
+                                width: 1008px;
+                                height: 544px;
+                                top: bottom;
+                                left: center;
+                            }
+                            
+                        
+                            .sty-3-8 {
+                                background-size: 1008px 544px;
+                                background-position: center bottom;
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-8 {
+                                width: 1008px;
+                                height: 544px;
+                                top: bottom;
+                                left: center;
+                            }
+                            
+                        
+                            .sty-1-11 {
+                                
+                                background-size: 1008px 552px;
+                                
+                                
+                                
+                            }
+                        
+                            .sty-3-13 {
+                                background-size: 1008px 544px;
+                                background-position: center bottom;
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-13 {
+                                width: 1008px;
+                                height: 544px;
+                                top: bottom;
+                                left: center;
+                            }
+                            
+                        
+                            .sty-3-14 {
+                                background-size: 1008px 544px;
+                                background-position: center bottom;
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-14 {
+                                width: 1008px;
+                                height: 544px;
+                                top: bottom;
+                                left: center;
+                            }
+                            
+                        
+                            .sty-1-18 {
+                                
+                                background-size: 1008px 552px;
+                                
+                                
+                                
+                            }
+                        
+                            .sty-3-19 {
+                                background-size: 1008px 544px;
+                                background-position: center bottom;
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-19 {
+                                width: 1008px;
+                                height: 544px;
+                                top: bottom;
+                                left: center;
+                            }
+                            
+                        
+                            .sty-3-20 {
+                                background-size: 1008px 544px;
+                                background-position: center bottom;
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-20 {
+                                width: 1008px;
+                                height: 544px;
+                                top: bottom;
+                                left: center;
+                            }
+                            
+                        
+                            .sty-1-23 {
+                                
+                                background-size: 1008px 552px;
+                                
+                                
+                                
+                            }
+                        
+                            .sty-3-24 {
+                                background-size: 1008px 544px;
+                                background-position: center bottom;
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-24 {
+                                width: 1008px;
+                                height: 544px;
+                                top: bottom;
+                                left: center;
+                            }
+                            
+                        
+                            .sty-3-25 {
+                                background-size: 1008px 544px;
+                                background-position: center bottom;
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-25 {
+                                width: 1008px;
+                                height: 544px;
+                                top: bottom;
+                                left: center;
+                            }
+                            
+                        
+                            .sty-4-28 {
+                                
+                                
+                                
+                                
+                            }
+                            .sty-3-29 {
+                                background-size: 1008px 1478px;
+                                
+                                height: 1478px;
+                                margin-top: 96px;
+                                
+                            }
+                            .block-bl2 .absolut-29 {
+                                width: 1008px;
+                                height: 1478px;
+                                
+                                
+                            }
+                            
+                        
+                            .sty-28-100 {
+                                
+                                
+                            }
+                         }
+                </style>
+                <style>
+                    @media screen and (max-width: 1023px) {
+                        body {
+                            padding-top: 1.775rem;
+                        }
+                        #header-iframe {
+                            height: 1.775rem;
+                        }   
+                        
+                            .sty-1-1 {
+                                
+                                background-image: url(../../resource/instance/maintheme_1750387860_5BCF3D.webp);
+                                height: 143.6vw;
+                                background-size: 100vw 143.6vw;
+                                
+                                
+                                
+                            }
+                            .sty-1-1 .title {
+                                color: #ffffff;
+                            }
+                            .sty-1-1 .sub-title {
+                                color: #ffffff;
+                            }
+                        
+                            .sty-3-2 {
+                                background-image: url(../../resource/instance/Frame1597881402_1750390965_DDA351.webp);
+                                
+                                background-size: 90.6vw  143.6vw;
+                                
+                                
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-2 {
+                                
+                                
+                                
+                                
+                            }
+                            
+                            
+                        .sty-4-4 {
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                        }
+                            .sty-1-5 {
+                                
+                                background-image: url(../../resource/instance/maintheme_1750390952_9FA9BB.webp);
+                                height: 143.6vw;
+                                background-size: 100vw 143.6vw;
+                                
+                                
+                                
+                            }
+                            
+                            
+                        
+                            .sty-3-6 {
+                                background-image: url(../../resource/instance/Frame1597880393_1750326829_8F8055.webp);
+                                
+                                background-size: 90.6vw  143.6vw;
+                                
+                                
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-6 {
+                                
+                                
+                                
+                                
+                            }
+                            
+                            
+                        
+                            .sty-3-7 {
+                                background-image: url(../../resource/instance/Frame1597881219_1750326932_EAEB4E.webp);
+                                
+                                background-size: 90.6vw  143.6vw;
+                                
+                                
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-7 {
+                                
+                                
+                                
+                                
+                            }
+                            
+                            
+                        
+                            .sty-3-8 {
+                                background-image: url(../../resource/instance/Frame1597880406_1750326954_AB5671.webp);
+                                
+                                background-size: 90.6vw  143.6vw;
+                                
+                                
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-8 {
+                                
+                                
+                                
+                                
+                            }
+                            
+                            
+                        
+                            .sty-1-11 {
+                                
+                                background-image: url(../../resource/instance/maintheme-1_1750390985_6C54BB.webp);
+                                height: 143.6vw;
+                                background-size: 100vw 143.6vw;
+                                
+                                
+                                
+                            }
+                            
+                            
+                        
+                            .sty-3-13 {
+                                background-image: url(../../resource/instance/Frame1597880394_1750327007_3A04CC.webp);
+                                
+                                background-size: 90.6vw  143.6vw;
+                                
+                                
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-13 {
+                                
+                                
+                                
+                                
+                            }
+                            
+                            
+                        
+                            .sty-3-14 {
+                                background-image: url(../../resource/instance/Frame1597880395_1750327709_0B4ECB.webp);
+                                
+                                background-size: 90.6vw  143.6vw;
+                                
+                                
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-14 {
+                                
+                                
+                                
+                                
+                            }
+                            
+                            
+                        
+                            .sty-1-18 {
+                                
+                                background-image: url(../../resource/instance/maintheme-2_1750391005_9D5F1D.webp);
+                                height: 143.6vw;
+                                background-size: 100vw 143.6vw;
+                                
+                                
+                                
+                            }
+                            
+                            
+                        
+                            .sty-3-19 {
+                                background-image: url(../../resource/instance/Frame1597880407_1750327117_64EF97.webp);
+                                
+                                background-size: 90.6vw  143.6vw;
+                                
+                                
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-19 {
+                                
+                                
+                                
+                                
+                            }
+                            
+                            
+                        
+                            .sty-3-20 {
+                                background-image: url(../../resource/instance/Frame1597880408_1750327144_D2FF40.webp);
+                                
+                                background-size: 90.6vw  143.6vw;
+                                
+                                
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-20 {
+                                
+                                
+                                
+                                
+                            }
+                            
+                            
+                        
+                            .sty-1-23 {
+                                
+                                background-image: url(../../resource/instance/maintheme-3_1750391033_96C2F7.webp);
+                                height: 143.6vw;
+                                background-size: 100vw 143.6vw;
+                                
+                                
+                                
+                            }
+                            
+                            
+                        
+                            .sty-3-24 {
+                                background-image: url(../../resource/instance/Frame1597880409_1750327217_84CCB3.webp);
+                                
+                                background-size: 90.6vw  143.6vw;
+                                
+                                
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-24 {
+                                
+                                
+                                
+                                
+                            }
+                            
+                            
+                        
+                            .sty-3-25 {
+                                background-image: url(../../resource/instance/Frame1597880410_1750327223_EE6FFE.webp);
+                                
+                                background-size: 90.6vw  143.6vw;
+                                
+                                
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-25 {
+                                
+                                
+                                
+                                
+                            }
+                            
+                            
+                        .sty-4-28 {
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                        }
+                            .sty-3-29 {
+                                background-image: url(../../resource/instance/Frame1597881413_1750391022_745411.webp);
+                                
+                                background-size: 90.6vw  545.5vw;
+                                
+                                height: 545.5vw;
+                                
+                                margin-top: 22.5vw;
+                                
+                            }
+                            .block-bl2 .absolut-29 {
+                                
+                                
+                                
+                                
+                            }
+                            
+                            
+                        .oversea-form .oversea-form-cont {
+                            height: 80vh !important;
+                        }
+                    }
+                </style>
+            </head>
+            <body>
+                <iframe id="header-iframe" src="../../common/header_white.html" style="
+                    width: 100%;
+                    border: 0 none;
+                    overflow: scroll;
+                    position: fixed;
+                    z-index: 999;
+                    top: 0;"
+                ></iframe>
+                
+                <div class='block-tl block-tl-ty1 sty-1-1'>
+                                        <h2 class='title '>Smart Hotel Solutions</h2><div class='sub-title pcshow'>Smart hotel solutions improve the guest experience and optimize operations<br>for greater safety, efficiency, and energy savings.</div><div class='sub-title mobileshow'>Enhancing Stays, Optimizing Safety, Efficiency, Energy</div><div class="block-tl-flex">
+                            
+                            
+                        </div>
+                                    </div><div class="sty-3-2 block-bl2 tlstyle ">
+                            <h2 class='title '>Integrated Hotel Intelligence</h2>
+                            
+                            <div class='sub-title pcshow'>Smart hotel solutions with smart check-in/out, intuitive interaction, <br>energy and alarm management for a seamless guest experience.</div>
+                            <div class='sub-title mobileshow'> </div>
+                            
+                            
+                            <div class="block-bl2-flex ">
+                                
+                            </div>
+                            
+                            
+                        </div><div class="sty-4-4 block-txt ">
+                        <div class='desc '>How Smart Hotel Solutions Help You</div>
+                        
+                    </div><div class='block-tl  sty-1-5'>
+                                        <div class="block-tl-flex">
+                            
+                            
+                        </div>
+                                    </div><div class="sty-3-6 block-bl2 tlstyle ">
+                            <h2 class='title '>Pre-Check-In Preparation</h2>
+                            
+                            <div class='sub-title pcshow'>Before arrival, the system activates HVAC and air purifier <br>to ensure a comfortable temperature and clean air instantly.</div>
+                            <div class='sub-title mobileshow'>System pre-activates HVAC and purifier <br>for instant comfort and clean air.</div>
+                            
+                            
+                            <div class="block-bl2-flex ">
+                                
+                            </div>
+                            
+                            
+                        </div><div class="sty-3-7 block-bl2 tlstyle ">
+                            <h2 class='title '>One-Tap Light Control</h2>
+                            
+                            <div class='sub-title pcshow'>Control all room lighting with a single tap using the LifeSmart smart panel;<br>no more hunting for individual switches.</div>
+                            <div class='sub-title mobileshow'>Control all lights with one tap on LifeSmart panel.</div>
+                            
+                            
+                            <div class="block-bl2-flex ">
+                                
+                            </div>
+                            
+                            
+                        </div><div class="sty-3-8 block-bl2 tlstyle ">
+                            <h2 class='title '>Sensor-Based Automation</h2>
+                            
+                            <div class='sub-title pcshow'>Motion sensors detect movement to trigger night lights,<br>bathroom lights, and ventilation, ensuring a seamless, intuitive stay experience.</div>
+                            <div class='sub-title mobileshow'>Motion sensors trigger lights<br>and ventilation for seamless comfort.</div>
+                            
+                            
+                            <div class="block-bl2-flex ">
+                                
+                            </div>
+                            
+                            
+                        </div><div class='block-tl  sty-1-11'>
+                                        <div class="block-tl-flex">
+                            
+                            
+                        </div>
+                                    </div><div class="sty-3-13 block-bl2 tlstyle ">
+                            <h2 class='title '>Auto Reset After Checkout</h2>
+                            
+                            <div class='sub-title pcshow'>Once cleaning is complete, the system automatically restores default settings,<br>ensuring a standardized, high-quality environment for the next guest.</div>
+                            <div class='sub-title mobileshow'>System resets after cleaning, <br>ensuring consistent quality for guests.</div>
+                            
+                            
+                            <div class="block-bl2-flex ">
+                                
+                            </div>
+                            
+                            
+                        </div><div class="sty-3-14 block-bl2 tlstyle ">
+                            <h2 class='title '>Interactive E-map Monitoring</h2>
+                            
+                            <div class='sub-title pcshow'>With EcoLink, you can easily view room occupancy, lighting, temperature, <br>and HVAC status across zones, and control everything with just one click.</div>
+                            <div class='sub-title mobileshow'>View and control rooms: occupancy, lighting, temperature, HVAC via EcoLink.</div>
+                            
+                            
+                            <div class="block-bl2-flex ">
+                                
+                            </div>
+                            
+                            
+                        </div><div class='block-tl  sty-1-18'>
+                                        <div class="block-tl-flex">
+                            
+                            
+                        </div>
+                                    </div><div class="sty-3-19 block-bl2 tlstyle ">
+                            <h2 class='title '>Smart Alarm Management</h2>
+                            
+                            <div class='sub-title pcshow'>EcoLink lets you define alarms for devices offline, voltage anomalies, water leaks, <br>poor air quality, temperature/humidity issues, and more.</div>
+                            <div class='sub-title mobileshow'>EcoLink defines alarms <br>for offline devices, leaks, air, climate.</div>
+                            
+                            
+                            <div class="block-bl2-flex ">
+                                
+                            </div>
+                            
+                            
+                        </div><div class="sty-3-20 block-bl2 tlstyle ">
+                            <h2 class='title '>Real-Time Alerts</h2>
+                            
+                            <div class='sub-title pcshow'>The system instantly notifies relevant staff when an issue occurs, <br>enabling fast, efficient responses before problems escalate.</div>
+                            <div class='sub-title mobileshow'>System notifies staff instantly for fast, <br>efficient issue resolution.</div>
+                            
+                            
+                            <div class="block-bl2-flex ">
+                                
+                            </div>
+                            
+                            
+                        </div><div class='block-tl  sty-1-23'>
+                                        <div class="block-tl-flex">
+                            
+                            
+                        </div>
+                                    </div><div class="sty-3-24 block-bl2 tlstyle ">
+                            <h2 class='title '>Smart Energy Management</h2>
+                            
+                            <div class='sub-title pcshow'>We can deliver detailed energy data by region, device, and department, <br>enabling trend analysis, cost reduction, and targeted energy savings.</div>
+                            <div class='sub-title mobileshow'>Provides energy data by region, device, <br>and department for savings.</div>
+                            
+                            
+                            <div class="block-bl2-flex ">
+                                
+                            </div>
+                            
+                            
+                        </div><div class="sty-3-25 block-bl2 tlstyle ">
+                            <h2 class='title '>Structured Area Management</h2>
+                            
+                            <div class='sub-title pcshow'>Organize zones, monitor occupancy and device status, <br>and manage everything efficiently through one centralized, intuitive platform.</div>
+                            <div class='sub-title mobileshow'>Manage zones, occupancy, and devices <br>efficiently via one platform.</div>
+                            
+                            
+                            <div class="block-bl2-flex ">
+                                
+                            </div>
+                            
+                            
+                        </div><div class="sty-4-28 block-txt ">
+                        <div class='desc pcshow'>LifeSmart Smart Hotel Solutions <br>Are Now Deployed Worldwide</div>
+                        <div class='desc mobileshow'>LifeSmart Smart Hotel Solutions Are Now Deployed Worldwide</div>
+                    </div><div class="sty-3-29 block-bl2 tlstyle ">
+                            
+                            
+                            
+                            
+                            
+                            
+                            <div class="block-bl2-flex ">
+                                
+                            </div>
+                            
+                            
+                        </div><div class="sty-28-100 oversea-form" id="oversea-form-modal">
+                        <div class="oversea-form-wrapper">
+                            <img class="oversea-form-close" src="../../assets/images/close_mobile_dark.svg"></img>
+                            <div class="oversea-form-cont border border_mb">
+                                <h2 class='title '>Get A Quote</h2>
+                                
+                                <div class="oversea-form-tabbar-title">You are:</div>
+                                <div class="oversea-form-tabbar" >
+                                    <div class="oversea-form-tabbar-item on" data-type="2" >Distributor</div>
+                                    <div class="oversea-form-tabbar-item " data-type="3" >System Integrator</div>
+                                    <div class="oversea-form-tabbar-item " data-type="1" >Real Estate Developer</div>
+                                    <div class="oversea-form-tabbar-item " data-type="4" >End User</div>
+                                </div>
+                                <form id="overseaForm" >  
+                                    <div class="oversea-form-row">
+                                        <div class="item-col2">
+                                            <div class="title">Name:</div>
+                                            <input id="contactName" maxlength="128" name="name" type="text" class="oversea-form-input" placeholder="Your first and last name">
+                                        </div>
+                                        <div class="item-col2 join" >
+                                            <div class="title">Home Size:</div>
+                                            <input id="contactArea" maxlength="64" name="area" type="text" class="oversea-form-input" placeholder="Please enter your home's size in m²">
+                                        </div>
+                                        <div class="item-col2 design" >
+                                            <div class="title">Company:</div>
+                                            <input id="contactCompany" maxlength="128" name="company" type="text" class="oversea-form-input" placeholder="Your company name">
+                                            
+                                        </div>
+                                    </div> 
+                                    <div class="oversea-form-row">
+                                        <div class="item-col2">
+                                            <div class="title">E-mail:</div>
+                                            <input id="contactEmail" maxlength="64" name="concat" type="text" class="oversea-form-input" placeholder="Work email is preferred">
+                                        </div>
+                                        <div class="item-col2 oversea-form-col" >
+                                            <div class="title">Country/Region:</div>
+                                            <input id="contactCountry" maxlength="64" name="country" type="text" class="oversea-form-input" placeholder="Select an option">
+                                            <div id="oversea-form-options" ></div>
+                                        </div>
+                                    </div>
+                                    <div class="oversea-form-row">
+                                        <div class="item-col2">
+                                            <div class="title">Contact Number:</div>
+                                            <input id="contactConcat" maxlength="11" name="concat" type="text" class="oversea-form-input" placeholder="Your phone number or WhatsApp">
+                                        </div>
+                                        <div class="item-col2" >
+                                            <div class="title">You are interested in:</div>
+                                            <div class="oversea-form-tabbar" >
+                                                <div class="oversea-form-tabbar-option"  >Smart Home</div>
+                                                <div class="oversea-form-tabbar-option"   >Gaming Solution</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="oversea-form-row">
+                                        <div class="item-col">
+                                            <div class="title">Your needs:</div>
+                                            <textarea id="contactContent" maxlength="1024" name="content" class="oversea-form-textarea" placeholder="Please describe your needs in detail within 200 words, and we will get back to you as soon as possible." ></textarea>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="oversea-form-tip">We respect your confidentiality and all information is protected.</div>
+                                    <div class="oversea-form-box">
+                                        <button class="oversea-form-button" type="submit">SUBMIT</button>  
+                                    </div>
+                                </form>
+                                <div id="submitSuccess" class="oversea-form-success">0</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                        <script>
+                            window.addEventListener('load', function() {
+                                let loading = false //正在提交表单
+                                console.log("loading::::::::::::", loading);
+                               
+                                const option = document.getElementById('oversea-form-options');
+                                var countryList = [
+                                    { "en": "Afghanistan", "nc": "AF" }, { "en": "Albania", "nc": "AL" }, { "en": "Algeria", "nc": "DZ" },{ "en": "Andorra", "nc": "AD" },
+                                    { "en": "Angola", "nc": "AO" }, { "en": "Antigua and Barbuda", "nc": "AG" }, { "en": "Argentina", "nc": "AR" }, { "en": "Armenia", "nc": "AM" },
+                                    { "en": "Aruba", "nc": "AW" }, { "en": "Australia", "nc": "AU" }, { "en": "Austria", "nc": "AT" }, { "en": "Azerbaijan", "nc": "AZ" },
+                                    { "en": "Bahamas", "nc": "BS" },  { "en": "Bahrain", "nc": "BH" }, { "en": "Bangladesh", "nc": "BD" }, { "en": "Barbados", "nc": "BB" },
+                                    { "en": "Belarus", "nc": "BY" }, { "en": "Belgium", "nc": "BE" }, { "en": "Belize", "nc": "BZ" }, { "en": "Benin", "nc": "BJ" },
+                                    { "en": "Bermuda", "nc": "BM" }, { "en": "Bhutan", "nc": "BT" }, { "en": "Bolivia", "nc": "BO" }, { "en": "Bosnia And Herzegovina", "nc": "BIH" },
+                                    { "en": "Botswana", "nc": "BW" }, { "en": "Bouvet Island", "nc": "BV" }, { "en": "Brazil", "nc": "BR" }, { "en": "British Indian Ocean Territory", "nc": "IO" },
+                                    { "en": "British Virgin Islands", "nc": "VG" }, { "en": "Brunei", "nc": "BN" }, { "en": "Bulgaria", "nc": "BG" }, { "en": "Burkina-faso", "nc": "BF" },
+                                    { "en": "Burma", "nc": "MM" }, { "en": "Burundi", "nc": "BI" }, { "en": "Cameroon", "nc": "CM" }, { "en": "Canada", "nc": "CA" },
+                                    { "en": "Cape Verde", "nc": "CV" }, { "en": "Central African Republic", "nc": "CF" }, { "en": "Chad", "nc": "TD" }, { "en": "Chile", "nc": "CL" },
+                                    { "en": "China", "nc": "CN" }, { "en": "Colombia", "nc": "CO" }, { "en": "Comoros", "nc": "KM" }, { "en": "Congo", "nc": "CG" },
+                                    { "en": "Costa Rica", "nc": "CR" }, { "en": "Cote d'Ivoire", "nc": "CIV" }, { "en": "Croatia", "nc": "HR" }, { "en": "Cuba", "nc": "CU" },
+                                    { "en": "Curaçao", "nc": "CW" }, { "en": "Cyprus", "nc": "CY" }, { "en": "Czech Republic", "nc": "CZ" }, { "en": "Denmark", "nc": "DK" },
+                                    { "en": "Djibouti", "nc": "DJ" }, { "en": "Dominica", "nc": "DM" }, { "en": "Dominican Republic", "nc": "DO" }, { "en": "Ecuador", "nc": "EC" },
+                                    { "en": "Egypt", "nc": "EG" }, { "en": "EI Salvador", "nc": "SV" }, { "en": "Estonia", "nc": "EE" }, { "en": "Ethiopia", "nc": "ET" },
+                                    { "en": "European Union", "nc": "EU" }, { "en": "Fiji Islands", "nc": "FIJ" }, { "en": "Finland", "nc": "FI" }, { "en": "France", "nc": "FR" },
+                                    { "en": "French Guiana", "nc": "GF" }, { "en": "Gabon", "nc": "GA" }, { "en": "Gambia", "nc": "GM" }, { "en": "Georgia", "nc": "GE" },
+                                    { "en": "Germany", "nc": "DE" }, { "en": "Ghana", "nc": "GH" }, { "en": "Greece", "nc": "GR" },  { "en": "Grenada", "nc": "GD" },
+                                    { "en": "Guadeloupe", "nc": "GP" },  { "en": "Guatemala", "nc": "GT" }, { "en": "Guernsey", "nc": "GG" },  { "en": "Guinea", "nc": "GN" },
+                                    { "en": "Gulf Cooperation Council", "nc": "GCC" },  { "en": "Guyana", "nc": "GY" }, { "en": "Haiti", "nc": "HT" }, { "en": "Honduras", "nc": "HN" },
+                                    { "en": "Hongkong", "nc": "HK" }, { "en": "Hungary", "nc": "HU" }, { "en": "Iceland", "nc": "IS" }, { "en": "India", "nc": "IN" },
+                                    { "en": "Indonesia", "nc": "ID" }, { "en": "Indonesia", "nc": "IDN" }, { "en": "Iran", "nc": "IR" }, { "en": "Iraq", "nc": "IQ" },
+                                    { "en": "Ireland", "nc": "IE" }, { "en": "Isle of Man", "nc": "IM" }, { "en": "Israel", "nc": "IL" }, { "en": "Italy", "nc": "IT" },
+                                    { "en": "Jamaica", "nc": "JM" }, { "en": "Japan", "nc": "JP" }, { "en": "Jersey", "nc": "JE" }, { "en": "Jordan", "nc": "JOR" },
+                                    { "en": "Kampuchea (Cambodia ]", "nc": "KH" }, { "en": "Kazakstan", "nc": "KZ" }, { "en": "Kenya", "nc": "KE" }, { "en": "Korea", "nc": "KR" },
+                                    { "en": "Kosovo", "nc": "XK" }, { "en": "Kuwait", "nc": "KW" }, { "en": "Kyrgyzstan", "nc": "KG" }, { "en": "Laos", "nc": "LA" },
+                                    { "en": "Latvia", "nc": "LV" }, { "en": "Lebanon", "nc": "LB" }, { "en": "Lesotho", "nc": "LS" }, { "en": "Liberia", "nc": "LR" },
+                                    { "en": "Libya", "nc": "LY" }, { "en": "Liechtenstein", "nc": "LI" }, { "en": "Lithuania", "nc": "LT" }, { "en": "Luxembourg", "nc": "LU" },
+                                    { "en": "Macao", "nc": "MO" }, { "en": "Madagascar", "nc": "MG" }, { "en": "Malawi", "nc": "MW" }, { "en": "Malaysia", "nc": "MY" },
+                                    { "en": "Maldives", "nc": "MV" }, { "en": "Mali", "nc": "ML" }, { "en": "Malta", "nc": "MT" }, { "en": "Mauritania", "nc": "MR" },
+                                    { "en": "Mauritius", "nc": "MU" }, { "en": "Mexico", "nc": "MX" }, { "en": "Moldova Republic of", "nc": "MD" }, { "en": "Monaco", "nc": "MC" },
+                                    { "en": "Mongolia", "nc": "MN" }, { "en": "Montenegro", "nc": "ME" }, { "en": "Montserrat", "nc": "MS" }, { "en": "Morocco", "nc": "MA" },
+                                    { "en": "Mozambique", "nc": "MZ" }, { "en": "Namibia", "nc": "NA" }, { "en": "Nauru", "nc": "NR" }, { "en": "Nepal", "nc": "NP" },
+                                    { "en": "Netherlands", "nc": "NL" }, { "en": "Netherlands Caribbean", "nc": "AN" }, { "en": "New Zealand", "nc": "NZ" }, { "en": "Nicaragua", "nc": "NI" },
+                                    { "en": "Niger", "nc": "NE" }, { "en": "Nigeria", "nc": "NG" }, { "en": "Norfolk Island", "nc": "NF" }, { "en": "North Korea", "nc": "KP" },
+                                    { "en": "Norway", "nc": "NO" }, { "en": "Oman", "nc": "OM" }, { "en": "Pakistan", "nc": "PK" }, { "en": "Palestine", "nc": "PS" },
+                                    { "en": "Panama", "nc": "PA" }, { "en": "Papua New Cuinea", "nc": "PG" }, { "en": "Paraguay", "nc": "PY" }, { "en": "Peru", "nc": "PE" },
+                                    { "en": "Philippines", "nc": "PH" }, { "en": "Poland", "nc": "PL" }, { "en": "Portugal", "nc": "PT" }, { "en": "Puerto Rico", "nc": "PR" },
+                                    { "en": "Qatar", "nc": "QA" }, { "en": "Republika Severna Makedonija", "nc": "MKD" }, { "en": "Réunion", "nc": "RE" }, { "en": "Romania", "nc": "RO" },
+                                    { "en": "Russia", "nc": "RU" }, { "en": "Rwanda", "nc": "RW" }, { "en": "Saint-Martin", "nc": "MF" }, { "en": "San Marino", "nc": "SM" },
+                                    { "en": "Saudi Arabia", "nc": "SA" }, { "en": "Senegal", "nc": "SN" }, { "en": "Serbia", "nc": "RS" }, { "en": "Seychelles", "nc": "SC" },
+                                    { "en": "Sierra Leone", "nc": "SL" }, { "en": "Singapore", "nc": "SG" }, { "en": "Sint Maarten", "nc": "SX" }, { "en": "Slovakia", "nc": "SK" },
+                                    { "en": "Slovenia", "nc": "SI" }, { "en": "Solomon Is", "nc": "SB" }, { "en": "Somali", "nc": "SO" }, { "en": "South Africa", "nc": "ZA" },
+                                    { "en": "South Sudan", "nc": "SS" }, { "en": "Spain", "nc": "ES" }, { "en": "Sri Lanka", "nc": "LK" }, { "en": "St.Lucia", "nc": "LC" },
+                                    { "en": "Sudan", "nc": "SD" }, { "en": "Suriname", "nc": "SR" }, { "en": "Swaziland", "nc": "SZ" }, { "en": "Sweden", "nc": "SE" },
+                                    { "en": "Switzerland", "nc": "CH" }, { "en": "Syria", "nc": "SY" }, { "en": "Taiwan", "nc": "TW" }, { "en": "Taiwan", "nc": "TWN" },
+                                    { "en": "Tajikstan", "nc": "TJ" }, { "en": "Tanzania", "nc": "TZ" }, { "en": "Thailand", "nc": "TH" }, { "en": "Timor-Leste", "nc": "TL" },
+                                    { "en": "Togo", "nc": "TG" }, { "en": "Tonga", "nc": "TO" }, { "en": "Trinidad and Tobago", "nc": "TT" }, { "en": "Tunisia", "nc": "TN" },
+                                    { "en": "Turkey", "nc": "TR" }, { "en": "Turkmenistan", "nc": "TM" }, { "en": "Turks and Caicos Islands", "nc": "TC" }, { "en": "Uganda", "nc": "UG" },
+                                    { "en": "Ukraine", "nc": "UA" }, { "en": "United Arab Emirates", "nc": "AE" }, { "en": "United Kingdom", "nc": "GB" }, { "en": "United States Minor Outlying Islands", "nc": "UM" },
+                                    { "en": "United States of America", "nc": "US" }, { "en": "United States Virgin Islands", "nc": "VI" }, { "en": "Uruguay", "nc": "UY" }, { "en": "Uzbekistan", "nc": "UZ" },
+                                    { "en": "Venezuela", "nc": "VE" }, { "en": "Vietnam", "nc": "VN" }, { "en": "Yemen", "nc": "YE" }, { "en": "Zambia", "nc": "ZM" }, { "en": "Zimbabwe", "nc": "ZW" }
+                                ];
+                                $(".oversea-form-close").on("click", function (e) {
+                                    $("#oversea-form-modal").removeClass("on");
+                                })
+                                $('#overseaForm').on('submit', function(event) {  
+                                    event.preventDefault(); // 阻止表单的默认提交行为  
+                                    if (loading) return;
+                                    loading = true;
+                                    var name = $('#contactName').val();  //名字
+                                    var company = $('#contactCompany').val();  //公司
+                                    var area = $('#contactArea').val();  //面积
+                                    var concat = $('#contactConcat').val();  //联系电话
+                                    var email = $('#contactEmail').val();  //邮箱
+                                    var content = $('#contactContent').val();  //内容
+                                    var country = $('#contactCountry').attr("data-value");  //国家
+                                    let type = $('.oversea-form-tabbar-item.on').text();
+                                    let interested = ""
+                                    $('.oversea-form-tabbar-option.on').each((index, item) => {
+                                        if(interested) interested += ",";
+                                        interested += $(item).text();
+                                    });
+                                    let nonce = 'xxxxxxxxxxxx4xxxyxxxxxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+                                        var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+                                        return v.toString(16);
+                                    });
+                                    if(!name || !concat || !email || !content || !country){
+                                        if(!name ) $(".oversea-form-success").text("The name is a required field!")
+                                        else if(!concat ) $(".oversea-form-success").text("Contact Number is a required field!")
+                                        else if(!email) $(".oversea-form-success").text("The email is a required field!")
+                                        else if(!content) $(".oversea-form-success").text("The content is a required field!")
+                                        else if(!country) $(".oversea-form-success").text("The country/Region is a required field!")
+                                        $(".oversea-form-success").addClass("show")
+                                        if(window.custom_timeout) clearTimeout(window.custom_timeout)
+                                        window.custom_timeout = setTimeout(function() {
+                                            $(".oversea-form-success").removeClass("show")
+                                        }, 4000)
+                                        loading = false;
+                                        return;
+                                    }
+                                    const visitSource = getVisitSourceData();
+                                    let dataForNewCrm = {}
+                                    dataForNewCrm['visit_category'] = visitSource.visit_category;
+                                    dataForNewCrm['visit_source'] = visitSource.visit_source;
+                                    dataForNewCrm['visit_medium'] = visitSource.visit_medium;
+                                    if (ga_client_id) {
+                                        dataForNewCrm["client_id"] = ga_client_id;
+                                    } else {
+                                        dataForNewCrm["client_id"] = "";
+                                    }
+                                    let req = {
+                                        params: {
+                                            name: name,
+                                            company: company,
+                                            area: area,
+                                            concat: concat,
+                                            content: content,
+                                            biz_type: type,
+                                            biz_intended: interested,
+                                            country: country,
+                                            email: email,
+                                            ...dataForNewCrm
+                                        },
+                                        sys: {
+                                            namespace: "Ls.Pub.Service.Consultation",
+                                            method: "CreateOverseasConsultation",
+                                            appkey: "lhoKALyASW8KPgCvgr2UVty49Yy9pagR",
+                                            apptoken: "XSslY15qx7p4zqZ80GKFj6t66iHAVpuq",
+                                            ts: Math.round(new Date().getTime()/1000),
+                                            version: "1.0",
+                                            nonce: nonce
+                                        }
+                                    }
+                                    $.ajax({
+                                        url: window.location.origin + "/mweb/app",
+                                        type: "POST",
+                                        dataType: "json",
+                                        contentType: false,    
+                                        data: JSON.stringify(req),
+                                        processData: false,
+                                        success: function(response) {  
+                                            // 请求成功时执行的函数  
+                                            loading = false;
+                                            if(response.code == 0) {
+                                                $(".oversea-form-success").text("Your submission has been successful. Our customer service will contact you as soon as possible!")
+                                                $(".oversea-form-success").addClass("show")
+                                                if(window.custom_timeout) clearTimeout(window.custom_timeout)
+                                                window.custom_timeout = setTimeout(function() {
+                                                    $(".oversea-form-success").removeClass("show")
+                                                }, 4000)
+                                                $('#overseaForm')[0].reset(); 
+                                                $("#oversea-form-modal").removeClass("on"); 
+                                                window.location.href = "../../other/Thank-you/index.html";
+                                            }else {
+                                                $(".oversea-form-success").text(response.message)
+                                                $(".oversea-form-success").addClass("show")
+                                                if(window.custom_timeout) clearTimeout(window.custom_timeout)
+                                                window.custom_timeout = setTimeout(function() {
+                                                    $(".oversea-form-success").removeClass("show")
+                                                }, 4000)
+                                            }
+                                            
+                                        },  
+                                        error: function(xhr, status, error) {  
+                                            // 请求失败时执行的函数  
+                                            $(".oversea-form-success").text('Error: ' + error)
+                                            $(".oversea-form-success").addClass("show")
+                                            if(window.custom_timeout) clearTimeout(window.custom_timeout)
+                                            window.custom_timeout = setTimeout(function() {
+                                                $(".oversea-form-success").removeClass("show")
+                                            }, 4000)
+                                        } 
+                                    })
+                                }); 
+                                $('.oversea-form-tabbar-item').on("click", function() {
+                                    $(this).addClass("on");
+                                    $(this).siblings().removeClass("on");
+                                    let idx = $(this).index();
+                                    if(idx !== 3) {
+                                        $(".design").css("display", "block")
+                                        $(".join").css("display", "none")
+                                    }else {
+                                        $(".design").css("display", "none")
+                                        $(".join").css("display", "block")
+                                    }
+                                })
+                                $('.oversea-form-tabbar-option').on("click", function() {
+                                    $(this).toggleClass("on");
+                                })
+                                $("#contactCountry").on("input", function() {
+                                    let country = []
+                                    let val = ($(this).val() || "").replace(/^s+|s+$/g, "");
+                                    if(!val){
+                                        country = countryList
+                                    }else {
+                                        country = countryList.filter(item => item.en.toLowerCase().indexOf(val) > -1)
+                                    }
+                                    option.innerHTML = "";
+                                    if(country.length > 0){
+                                        country.forEach((item, i) => {
+                                            const op = document.createElement('div');
+                                            op.className = "oversea-form-option"
+                                            op.innerHTML = item.en; // 选项内容
+                                            op.setAttribute('data-value', item.nc); // 选项值
+                                            option.appendChild(op);
+                                        })
+                                    }else {
+                                        const op = document.createElement('div');
+                                        op.className = "oversea-form-empty"
+                                        op.innerHTML = "no data"; // 选项内容
+                                        option.appendChild(op)
+                                    }
+                                    
+                                    $("#oversea-form-options").addClass("show")
+                                    
+                                    $(".oversea-form-option").on("click", function() {
+                                        let v = $(this).text();
+                                        $("#contactCountry").val(v)
+                                        $("#contactCountry").attr("data-value", v)
+                                        $("#oversea-form-options").removeClass("show")
+                                    })
+
+                                })
+                                $("#contactCountry").on("blur", function() {
+                                    setTimeout(function(){
+                                        $("#oversea-form-options").removeClass("show")
+                                        $("#contactCountry").val($("#contactCountry").attr("data-value"))
+                                    }, 500)
+                                })
+                                $("#contactCountry").on("focus", function() {
+                                    $("#oversea-form-options").addClass("show")
+                                })
+
+                                countryList.forEach((item, i) => {
+                                    const op = document.createElement('div');
+                                    op.className = "oversea-form-option"
+                                    op.innerHTML = item.en; // 选项内容
+                                    // op.setAttribute('data-value', item.nc); // 选项值
+                                    option.appendChild(op);
+                                })
+                                $(".oversea-form-option").on("click", function() {
+                                    let v = $(this).text();
+                                    $("#contactCountry").val(v)
+                                    $("#contactCountry").attr("data-value", v)
+                                    $("#oversea-form-options").removeClass("show")
+                                })
+                                    
+                            });
+                        </script>
+                <div class="contact-us"><img src="../../assets/images/form_icon.png" /></div>
+
+                <iframe id="footer-iframe" src="../../common/footer_white.html" style="width: 100%;;border: 0 none;"></iframe>
+                <script>
+                    (function () {
+                        const onloadAnimation = (idx, path) => {
+                            let node = document.getElementsByClassName("anim-box")[idx]
+                            let attr = node.attributes;
+                            let loop = true, speed = 1;
+                            if (attr && attr.lottie && attr.lottie.value) {
+                                let lottie = attr.lottie.value
+                                let arrs = lottie.split(";");
+                                arrs.forEach((item) => {
+                                    if(item) {
+                                        let arr = item.split(":");
+                                        if (arr[0] == "loop") loop = arr[1] == "false" ? false : true;
+                                        if (arr[0] == "speed") speed = Number(arr[1])
+                                    }
+                                })
+                            }
+                            var animData = {
+                                wrapper: node,
+                                animType: 'svg',
+                                loop,
+                                prerender: true,
+                                autoplay: false, // 初始不自动播放 
+                                path: path,
+
+                            };
+                            let anim = bodymovin.loadAnimation(animData);
+                            anim.setSpeed(speed); 
+                            // 开始播放动画  
+                            anim.play(); 
+                        }
+
+                        let animBoxs = $(".anim-box");
+                        for (var i = 0, length = animBoxs.length; i < length; i++) {
+                            onloadAnimation(i, $(".anim-box")[i].getAttribute("path"))
+                        }
+
+
+                        var iframe1 = document.getElementById('footer-iframe'); 
+                        iframe1.onload = function() {  
+                            var iframeDoc = iframe1.contentDocument || iframe1.contentWindow.document; 
+                            var iframeHeight = iframeDoc.body.scrollHeight; 
+                            var iframeWidth = iframeDoc.body.scrollWidth;
+                            // 你可以在这里添加代码来调整iframe的高度或执行其他操作  
+                            iframe1.style.height = iframeWidth >= 1024 ? (iframeHeight + 200) + 'px' : 'calc(15.625vw + ' + iframeHeight + 'px )' ;  //200是上下margin
+                        };  
+                    
+
+                        
+                        $(".block-tlTab-bar-item").on("click", function () {
+                            $(this).addClass("on")
+                            $(this).siblings().removeClass("on")
+                            $(this).parent().prev().css("transform", `translateX(${$(this).index() * -100}vw)`)
+                        })
+
+                        $(".img_box").on("click", function (e) {
+                            e.stopPropagation();  
+                            let index = $(this).index();
+                            let src = $(this).children("img").attr('src');
+                            $(this).parent().prev().children("img").attr("src", src)
+                            $(this).addClass("on")
+                            $(this).siblings().removeClass("on")
+                        })
+                        if(false) {
+                            let arr = []
+                            let a_str = []
+                            a_str.forEach((item) => {
+                                let anchorElement = document.getElementById(item.id);
+                                if (anchorElement && anchorElement.offsetTop) {
+                                    arr.push({top: anchorElement.offsetTop, id: item.id})
+                                }
+                            })
+                            $(window).scroll(function() {  
+                                var scroll = $(window).scrollTop(); // 获取滚动条垂直位置  
+                                let index = ""
+                                for(var i = 0, len = arr.length; i < len; i++) {
+                                    if(arr[i+1]){
+                                        if(scroll >= arr[i].top-30 && scroll < arr[i+1].top-30) {
+                                            index = i
+                                            break;
+                                        }
+                                    }else {
+                                        if(scroll >= arr[i].top-30) {
+                                            index = i
+                                            break;
+                                        }
+                                    }
+                                }
+                                if(index || index === 0) {
+                                    if($(".nav-anchor-cont a").eq(index).hasClass("on")){
+
+                                    }else {
+                                        $(".nav-anchor-cont a").removeClass("on")
+                                        $(".nav-anchor-cont a").eq(index).addClass("on")
+                                    }
+
+                                }
+                            }); 
+                            $(".nav-anchor-cont a").on("click", function (e) {
+                                $(this).addClass("on");
+                                $(this).siblings().removeClass("on")
+                                let id = $(this).attr("data");
+                                let item = arr.find(item => item.id == id);
+                                $('html, body').scrollTop(item.top);
+                            })
+                        }
+
+                        $('#contactForm').on('submit', function(event) {  
+                            event.preventDefault(); // 阻止表单的默认提交行为  
+                            var name = $('#contactName').val();  
+                            var company = $('#contactCompany').val();  
+                            var area = $('#contactArea').val();  
+                            var concat = $('#contactConcat').val();  
+                            var address = $('#contactAddress').val();  
+                            var content = $('#contactContent').val();  
+                            let index = $(".block-form-success").text()
+                            let type = index == 2 ? 1 :(index == 1 ? 3 : 2);
+                            let nonce = 'xxxxxxxxxxxx4xxxyxxxxxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+                                var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+                                return v.toString(16);
+                            });
+                            if(!name ){
+                                $(".block-form-success").text("请填写您的名称!")
+                                $(".block-form-success").addClass("show")
+                                if(window.custom_timeout) clearTimeout(window.custom_timeout)
+                                window.custom_timeout = setTimeout(function() {
+                                    $(".block-form-success").removeClass("show")
+                                }, 2000)
+                                return;
+                            }
+                            if(!concat ){
+                                $(".block-form-success").text("请填写您的联系方式!")
+                                $(".block-form-success").addClass("show")
+                                if(window.custom_timeout) clearTimeout(window.custom_timeout)
+                                window.custom_timeout = setTimeout(function() {
+                                    $(".block-form-success").removeClass("show")
+                                }, 2000)
+                                return;
+                            }
+                            if(!content ){
+                                $(".block-form-success").text("请填写您的需求!")
+                                $(".block-form-success").addClass("show")
+                                if(window.custom_timeout) clearTimeout(window.custom_timeout)
+                                window.custom_timeout = setTimeout(function() {
+                                    $(".block-form-success").removeClass("show")
+                                }, 2000)
+                                return;
+                            }
+                            let req = {
+                                params: {
+                                    name: name,
+                                    company: company,
+                                    area: area,
+                                    concat: concat,
+                                    address: address,
+                                    content: content,
+                                    ty: type
+                                },
+                                sys: {
+                                    namespace: "Ls.Pub.Service.Consultation",
+                                    method: "CreateConsultation",
+                                    appkey: "lhoKALyASW8KPgCvgr2UVty49Yy9pagR",
+                                    ts: Math.round(new Date().getTime()/1000),
+                                    version: "1.0",
+                                    nonce: nonce
+                                }
+                            }
+                            $.ajax({
+                                url: window.location.origin + "/mweb/app",
+                                type: "POST",
+                                dataType: "json",
+                                contentType: false,    
+                                data: JSON.stringify(req),
+                                processData: false,
+                                success: function(response) {  
+                                    // 请求成功时执行的函数  
+                                    if(response.code == 0) {
+                                        $(".block-form-success").text("提交成功，客服将会尽快与您联系！")
+                                        $(".block-form-success").addClass("show")
+                                        if(window.custom_timeout) clearTimeout(window.custom_timeout)
+                                        window.custom_timeout = setTimeout(function() {
+                                            $(".block-form-success").removeClass("show")
+                                        }, 2000)
+                                        $('#contactForm')[0].reset();  
+                                    }else {
+                                        $(".block-form-success").text(response.message)
+                                        $(".block-form-success").addClass("show")
+                                        if(window.custom_timeout) clearTimeout(window.custom_timeout)
+                                        window.custom_timeout = setTimeout(function() {
+                                            $(".block-form-success").removeClass("show")
+                                        }, 2000)
+                                    }
+                                    
+                                },  
+                                error: function(xhr, status, error) {  
+                                    // 请求失败时执行的函数  
+                                    $(".block-form-success").text('Error: ' + error)
+                                    $(".block-form-success").addClass("show")
+                                    if(window.custom_timeout) clearTimeout(window.custom_timeout)
+                                    window.custom_timeout = setTimeout(function() {
+                                        $(".block-form-success").removeClass("show")
+                                    }, 2000)
+                                } 
+                            })
+
+                            
+                           
+                        });  
+                        $('.block-form-tabbar-item').on("click", function() {
+                            $(this).addClass("on");
+                            $(this).siblings().removeClass("on");
+                            let idx = $(this).index();
+                            $(".block-form-success").text(idx)
+                            if(idx == 2) {
+                                $(".design").css("display", "block")
+                                $(".join").css("display", "none")
+                            }else {
+                                $(".join").css("display", "block")
+                                $(".design").css("display", "none")
+                            }
+                        })
+                        $(".contact-us").on("click", function() {    //弹框出问答
+                            $("#oversea-form-modal").addClass("on")
+                        })
+
+                    })()
+
+                    window.addEventListener('message', (event) => {
+                        if(event.data){ 
+                            if(event.data.k == "header"){
+                                var iframe = document.getElementById('header-iframe'); 
+                                iframe.style.height = event.data.v;  //200是上下margin
+                                if(event.data.v == "100vh"){
+                                    $("body").css("overflow", "hidden")
+                                }else {
+                                $("body").css("overflow", "auto")
+                                }
+                            }else if(event.data.k == "footer"){
+                                var iframe = document.getElementById('footer-iframe'); 
+                                iframe.style.height = event.data.v;  //200是上下margin
+                            }
+                          
+
+
+                        }
+                    });  
+                </script>
+            </body>
+        
+<!-- Mirrored from iot.ilifesmart.com/solutions/smart-hotel/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Apr 2026 01:09:08 GMT -->
+</html>

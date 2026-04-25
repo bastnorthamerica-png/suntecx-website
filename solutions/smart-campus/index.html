@@ -1,0 +1,1702 @@
+<!DOCTYPE html>
+            <html lang="en">
+            
+<!-- Mirrored from iot.ilifesmart.com/solutions/smart-campus/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Apr 2026 01:10:28 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+                <title>Smart Campus Solutions</title>
+                <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+                <meta name="description" content="Smart Campus Solutions we offer for school and campus, energy saving" >
+                <meta name="keywords" content="" >
+                <link rel="stylesheet" href="../../common.css" >
+                
+                
+                <link rel="stylesheet" href="index.css" >
+                <script src="../../lottie.min.js"></script>
+                <script src="../../jquery-3.6.0.min.js"></script>
+                <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag("consent", "default", {
+        ad_storage: "denied",
+        ad_user_data: "denied", 
+        ad_personalization: "denied",
+        analytics_storage: "denied",
+        functionality_storage: "denied",
+        personalization_storage: "denied",
+        security_storage: "granted",
+        wait_for_update: 2000,
+    });
+    gtag("set", "ads_data_redaction", true);
+    gtag("set", "url_passthrough", true);
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TPR34VN');</script>
+
+<!-- Start cookieyes banner --> 
+<script id="cookieyes" type="text/javascript" src="../../../cdn-cookieyes.com/client_data/076a5261762ead0ae6d640bb/script.js"></script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4411P1J138"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4411P1J138');
+
+  var ga_client_id = null; // 存储 GA Client ID
+  gtag("get", "G-4411P1J138", "client_id", function (clientId) {
+      if (clientId) {
+            ga_client_id = String(clientId);
+      }
+  });
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10841355507"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'AW-10841355507');
+</script>
+
+<script>
+window.addEventListener("load", function (event) {
+    const form = document.getElementById('overseaForm');
+    const emailInput = document.getElementById('contactEmail');
+
+    if (form && emailInput) {
+        form.addEventListener('submit', function(event) {
+            const emailValue = emailInput.value.trim();
+
+            if (emailValue !== "") {
+                    gtag('set', 'user_data', {"email": emailValue});
+gtag('event', 'UPD', {'send_to': 'AW-10841355507'});
+            } 
+        });
+    }
+});
+</script>
+<script>
+if (window.location.href.includes("Thank-you")) {
+window.addEventListener("load", function (event) {
+                    gtag('event', 'conversion', { 'send_to': 'AW-10841355507/U-uPCKvf55MbEPPpx7Eo' });
+})
+}
+</script>
+
+<script>
+    function getVisitSourceData() {
+        // 配置常量
+        const SESSION_STORAGE_KEY = "visit_session_data"; // 会话级缓存（自然流量）
+        const PAID_LOCK_KEY = "paid_source_lock"; // 持久化缓存（广告归因锁定）
+        const AD_ATTRIBUTION_LOCK_DAYS = 30; // 广告归因有效期（天）
+
+        // 社交媒体域名关键词（按长度降序排列，避免短域名误匹配长域名）
+        const SOCIAL_DOMAINS = [
+            "sublime_instagram", "sublime_linkedin", "xiaohongshu", "instagram", "pinterest",
+            "snapchat", "telegram", "facebook", "linkedin", "whatsapp", "youtube", "twitter",
+            "tiktok", "reddit", "lnkd.in", "wechat", "douyin", "weibo", "zhihu", "line", "t.co", "x",
+        ];
+
+        // 搜索引擎匹配规则
+        const SEARCH_ENGINES = [
+            { key: "google", pattern: /google.|^com.google./ },
+            { key: "baidu", pattern: /baidu./ },
+            { key: "bing", pattern: /bing./ },
+            { key: "yahoo", pattern: /yahoo./ },
+            { key: "sogou", pattern: /sogou./ },
+            { key: "so.com", pattern: /so.com/ },
+            { key: "duckduckgo", pattern: /duckduckgo./ },
+            { key: "yandex", pattern: /yandex./ },
+            { key: "sm.cn", pattern: /sm.cn/ },
+            { key: "naver", pattern: /naver./ },
+        ];
+
+        // Google 广告相关域名（严格匹配域名部分）
+        const GOOGLE_AD_DOMAINS = [
+            "googleadservices", "googlesyndication", "doubleclick", "googleads",
+            "2mdn.net", "googletagservices", "adtrafficquality.google", "tpc.googlesyndication.com",
+        ];
+
+        // Facebook 广告相关域名（当 fbclid 参数丢失时用于识别）
+        const FACEBOOK_AD_DOMAINS = ["l.facebook.com", "lm.facebook.com", "business.facebook.com"];
+
+        // Bing/Microsoft 广告相关域名
+        const BING_AD_DOMAINS = ["bing.com/aclick", "r.bing.com"];
+
+        // 付费媒介标识
+        const paidMediums = ["cpc", "ppc", "paidsearch", "display", "cpm", "ad", "ads", "affiliate"];
+
+        // Storage 安全读写封装（使用对象映射提升可读性）
+        const storageMap = {
+            session: typeof sessionStorage !== "undefined" ? sessionStorage : null,
+            local: typeof localStorage !== "undefined" ? localStorage : null,
+        };
+
+        const safeStorage = {
+            get: (type, key) => {
+            try {
+                return storageMap[type]?.getItem(key) ?? null;
+            } catch (e) {
+                /* Storage 不可用时静默处理 */
+                return null;
+            }
+            },
+            set: (type, key, val) => {
+            try {
+                storageMap[type]?.setItem(key, val);
+            } catch (e) {
+                /* Storage 不可用或已满时静默处理 */
+            }
+            },
+            remove: (type, key) => {
+            try {
+                storageMap[type]?.removeItem(key);
+            } catch (e) {
+                /* Storage 不可用时静默处理 */
+            }
+            },
+        };
+
+        // 获取 URL 参数（支持 search 和 hash 中的参数）
+        function getParam(name) {
+            const searchParams = new URLSearchParams(window.location.search);
+            if (searchParams.has(name)) return searchParams.get(name);
+            if (window.location.hash.includes("?")) {
+            const hashParams = new URLSearchParams(
+                window.location.hash.split("?")[1],
+            );
+            if (hashParams.has(name)) return hashParams.get(name);
+            }
+            return "";
+        }
+
+        // 提取根域名（正确处理 .co.uk / .com.cn 等二级后缀）
+        function getRootDomain(hostname) {
+            const parts = hostname.toLowerCase().split(".");
+            if (parts.length <= 2) return hostname.toLowerCase();
+            const secondLevelTLDs = ["co", "com", "org", "net", "gov", "edu", "ac", "or", "ne", "go", "me", "io"];
+            return (parts.length >= 3 && secondLevelTLDs.includes(parts[parts.length - 2]))
+            ? parts.slice(-3).join(".")
+            : parts.slice(-2).join(".");
+        }
+
+        // 提取 URL 中的广告点击标识
+        const currentGclid = getParam("gclid");
+        const gadSource = getParam("gad_source");
+        const fbclid = getParam("fbclid");
+        const msclkid = getParam("msclkid");
+        const ttclid = getParam("ttclid");
+        const dclid = getParam("dclid");
+        const wbraid = getParam("wbraid");
+        const gbraid = getParam("gbraid");
+        const gclsrc = getParam("gclsrc"); // Google Click Source
+
+        // 提取 UTM 参数
+        const utmSource = (getParam("utm_source") || "").toLowerCase();
+        const utmMedium = (getParam("utm_medium") || "").toLowerCase();
+        const utmCampaign = (getParam("utm_campaign") || "").toLowerCase();
+
+        // 判定是否包含广告点击标识
+        const hasClickId = !!(currentGclid || gadSource || fbclid || msclkid || dclid || ttclid || wbraid || gbraid || gclsrc);
+
+        // 判定是否付费 UTM
+        const isPaidUtm = paidMediums.includes(utmMedium) || /(?:^|[_-])cpc(?:$|[_-])/i.test(utmCampaign);
+
+        const now = new Date().getTime();
+        let result = null;
+
+        // ========== 情况 A: 当前是广告流量（优先级最高，覆盖旧数据）==========
+        if (hasClickId || isPaidUtm) {
+            let category = "C";
+            let medium = "cpc";
+            let source = "unknown_ad";
+
+            // 根据点击标识确定来源和媒介
+            if (dclid) {
+            // Google Display & Video 360 应使用 display 媒介
+            source = "google";
+            medium = "display";
+            } else if (currentGclid || wbraid || gbraid || gadSource || gclsrc) {
+            source = "google";
+            medium = (isPaidUtm && utmMedium) ? utmMedium : "cpc";
+            } else if (fbclid) {
+            source = "facebook";
+            medium = (isPaidUtm && utmMedium) ? utmMedium : "cpc";
+            } else if (msclkid) {
+            source = "bing";
+            medium = (isPaidUtm && utmMedium) ? utmMedium : "cpc";
+            } else if (ttclid) {
+            source = "tiktok";
+            medium = (isPaidUtm && utmMedium) ? utmMedium : "cpc";
+            } else if (utmSource) {
+            source = utmSource;
+            medium = utmMedium || "cpc";
+            }
+
+            result = { visit_category: category, visit_source: source, visit_medium: medium, gclid: currentGclid || "", timestamp: now };
+
+            // 广告流量写入 localStorage 长期锁定 + sessionStorage 会话缓存
+            safeStorage.set("local", PAID_LOCK_KEY, JSON.stringify(result));
+            safeStorage.set("session", SESSION_STORAGE_KEY, JSON.stringify(result));
+
+            return result;
+        }
+
+        // ========== 情况 B: 检查历史广告锁（30天内的广告归因优先）==========
+        const lockedDataJson = safeStorage.get("local", PAID_LOCK_KEY);
+        if (lockedDataJson) {
+            try {
+            const lockedData = JSON.parse(lockedDataJson);
+            const expiryTime = AD_ATTRIBUTION_LOCK_DAYS * 24 * 60 * 60 * 1000;
+
+            if (lockedData && lockedData.timestamp) {
+                if (now - lockedData.timestamp < expiryTime) {
+                // 未过期，返回历史广告数据
+                return { visit_category: lockedData.visit_category, visit_source: lockedData.visit_source, visit_medium: lockedData.visit_medium, gclid: lockedData.gclid || "", timestamp: lockedData.timestamp };
+                } else {
+                // 已过期，清理数据
+                safeStorage.remove("local", PAID_LOCK_KEY);
+                }
+            }
+            } catch (e) {
+            // 解析失败，清理无效数据
+            safeStorage.remove("local", PAID_LOCK_KEY);
+            }
+        }
+
+        // ========== 情况 C: 自然流量判定 ==========
+
+        // 优先使用会话缓存（防止页面内跳转丢失 referrer）
+        const sessionData = safeStorage.get("session", SESSION_STORAGE_KEY);
+        if (sessionData) {
+            try { return JSON.parse(sessionData); } catch (e) { /* JSON 解析失败时继续 */ }
+        }
+
+        let category = "A";
+        let source = "direct";
+        let medium = "none";
+
+        // 非付费 UTM 参数处理
+        if (utmSource || utmMedium) {
+            source = utmSource || "unknown";
+            const isSocial = utmMedium === "social" || SOCIAL_DOMAINS.some((p) => utmSource.includes(p));
+            category = isSocial ? "D" : "A";
+            medium = utmMedium || (isSocial ? "social" : "referral");
+        }
+        // Referrer 来源分析
+        else if (document.referrer) {
+            try {
+            const referrerUrl = new URL(../../index.html);
+            const referrerHostname = referrerUrl.hostname.toLowerCase();
+            const currentHostname = window.location.hostname.toLowerCase();
+
+            // 根域名比对，排除站内跳转
+            const referrerRoot = getRootDomain(referrerHostname);
+            const currentRoot = getRootDomain(currentHostname);
+            const isInternal = referrerRoot === currentRoot;
+
+            if (!isInternal) {
+                const referrerFullPath = referrerHostname + referrerUrl.pathname;
+
+                // 辅助函数：创建付费流量结果并缓存
+                const createAndCachePaidResult = (cat, src, med) => {
+                const r = { visit_category: cat, visit_source: src, visit_medium: med, gclid: "", timestamp: now };
+                safeStorage.set("local", PAID_LOCK_KEY, JSON.stringify(r));
+                safeStorage.set("session", SESSION_STORAGE_KEY, JSON.stringify(r));
+                return r;
+                };
+
+                // 1. 检查已知广告域名（Google 基础设施等）
+                const isStrictAdDomain = GOOGLE_AD_DOMAINS.some((adDomain) =>
+                referrerHostname.includes(adDomain),
+                );
+
+                // 2. 检查 Google 域名下的广告路径 (支持 google.com, google.co.uk 等)
+                const isGoogleDomain = /^google.|^com.google.|^www.google./.test(referrerHostname) || referrerHostname.includes(".google.");
+                const isGoogleAdPath = isGoogleDomain && (referrerUrl.pathname.includes("/aclk") || referrerUrl.pathname.includes("/pagead"));
+
+                // Google 广告系统 referrer，标记为付费流量
+                if (isStrictAdDomain || isGoogleAdPath) {
+                return createAndCachePaidResult("C", "google", "cpc");
+                }
+
+                // 检查是否来自 Facebook 广告系统域名
+                const isFacebookAdReferrer = FACEBOOK_AD_DOMAINS.some(
+                (adDomain) => referrerFullPath.includes(adDomain),
+                );
+                if (isFacebookAdReferrer) {
+                return createAndCachePaidResult("C", "facebook", "paid_social");
+                }
+
+                // 检查是否来自 Bing 广告系统域名
+                const isBingAdReferrer = BING_AD_DOMAINS.some(
+                (adDomain) => referrerFullPath.includes(adDomain),
+                );
+                if (isBingAdReferrer) {
+                return createAndCachePaidResult("C", "bing", "cpc");
+                }
+
+                // 搜索引擎识别（SEO 流量）
+                const matchedEngine = SEARCH_ENGINES.find(
+                (engine) =>
+                    engine.pattern.test(referrerHostname) ||
+                    (referrerUrl.protocol === "android-app:" &&
+                    referrerHostname.includes("google")),
+                );
+
+                if (matchedEngine) {
+                category = "B";
+                source = matchedEngine.key;
+                medium = "organic";
+                } else {
+                // 社交媒体识别
+                const matchedSocial = SOCIAL_DOMAINS.find((social) =>
+                    referrerHostname.includes(social),
+                );
+
+                if (matchedSocial) {
+                    category = "D";
+                    source = matchedSocial;
+                    medium = "social";
+                } else {
+                    // 其他外部来源归类为 Referral
+                    source = referrerHostname;
+                    medium = "referral";
+                }
+                }
+            }
+            } catch (e) {
+            /* URL 解析失败时保持 direct 直接访问状态 */
+            }
+        }
+
+        result = { visit_category: category, visit_source: source, visit_medium: medium, gclid: "", timestamp: now };
+
+        // 自然流量仅写入 sessionStorage
+        safeStorage.set("session", SESSION_STORAGE_KEY, JSON.stringify(result));
+
+        return result;
+    }
+
+    getVisitSourceData();
+</script>
+
+                <style> 
+                    body {
+                        padding-top: 48px;
+                    }
+                    #header-iframe {
+                        height: 48px;
+                    }   
+                    body {background-color: #F7F7F7; color: #111111} 
+ a {color: #111111} 
+                            .sty-1-1 {
+                                
+                                background-image: url(../../resource/instance/%e9%80%9a%e6%a0%8f1_1729070023_076E01.webp);
+                            }
+                            .sty-1-1 .title {
+                                color: #ffffff;
+                            }
+                            .sty-1-1 .sub-title {
+                                color: #ffffff;
+                            }
+                        
+                            .sty-3-2 {
+                                background-image: url(../../resource/instance/Frame1597881391_1750058225_9E8D4C.webp);
+                                
+                            }
+                            
+                            
+                        
+                            .sty-4-4 {
+                                
+                                
+                                
+                                
+                            }
+                            .sty-1-5 {
+                                background-color: #ffffff;
+                                background-image: url(../../resource/instance/%e9%80%9a%e6%a0%8f1_1750125320_21E24C.webp);
+                            }
+                            
+                            
+                        
+                            .sty-3-6 {
+                                background-image: url(../../resource/instance/Frame7883_1729070079_FA4B96.webp);
+                                
+                            }
+                            
+                            
+                        
+                            .sty-3-7 {
+                                background-image: url(../../resource/instance/Frame1597881198_1750059091_D21081.webp);
+                                
+                            }
+                            
+                            
+                        
+                            .sty-1-11 {
+                                background-color: #ffffff;
+                                background-image: url(../../resource/instance/%e9%80%9a%e6%a0%8f1-1_1750125334_33AC78.webp);
+                            }
+                            
+                            
+                        
+                            .sty-3-13 {
+                                background-image: url(../../resource/instance/Frame7883-2_1729070144_A6D38C.webp);
+                                
+                            }
+                            
+                            
+                        
+                            .sty-3-14 {
+                                background-image: url(../../resource/instance/Frame7883-3_1729070159_011238.webp);
+                                
+                            }
+                            
+                            
+                        
+                            .sty-1-18 {
+                                background-color: #ffffff;
+                                background-image: url(../../resource/instance/%e9%80%9a%e6%a0%8f1-2_1750125346_DACE29.webp);
+                            }
+                            
+                            
+                        
+                            .sty-3-19 {
+                                background-image: url(../../resource/instance/Frame1597881237_1754641305_BE1681.webp);
+                                
+                            }
+                            
+                            
+                        
+                            .sty-3-20 {
+                                background-image: url(../../resource/instance/Frame7883-5_1729070210_A5B688.webp);
+                                
+                            }
+                            
+                            
+                        
+                            .sty-4-28 {
+                                
+                                
+                                
+                                
+                            }
+                            .sty-3-29 {
+                                background-image: url(../../resource/instance/Frame7975_1750059807_23CE15.webp);
+                                
+                            }
+                            
+                            
+                        .sty-28-100 .join { display: none;}
+                            #oversea-form-modal {
+                                background-color: rgba(0, 0, 0, 0.8);
+                                display: none;
+                            }
+                            .sty-28-100 {
+                                
+                                
+                            }
+                </style>
+                <style>
+                    @media screen and (min-width: 1280px){ 
+                            .sty-1-1 {
+                                
+                                
+                                
+                                
+                                
+                            }
+                        
+                            .sty-3-2 {
+                                background-size: 1260px 680px;
+                                background-position: center bottom;
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-2 {
+                                width: 1260px;
+                                height: 680px;
+                                top: bottom;
+                                left: center;
+                            }
+                            
+                            
+                        
+                            .sty-4-4 {
+                                
+                                
+                                
+                                
+                            }
+                            .sty-1-5 {
+                                
+                                background-size: 1260px 690px;
+                                
+                                
+                                
+                            }
+                        
+                            .sty-3-6 {
+                                background-size: 1260px 680px;
+                                background-position: center bottom;
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-6 {
+                                width: 1260px;
+                                height: 680px;
+                                top: bottom;
+                                left: center;
+                            }
+                            
+                            
+                        
+                            .sty-3-7 {
+                                background-size: 1260px 680px;
+                                background-position: center bottom;
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-7 {
+                                width: 1260px;
+                                height: 680px;
+                                top: bottom;
+                                left: center;
+                            }
+                            
+                            
+                        
+                            .sty-1-11 {
+                                
+                                background-size: 1260px 690px;
+                                
+                                
+                                
+                            }
+                        
+                            .sty-3-13 {
+                                background-size: 1260px 680px;
+                                background-position: center bottom;
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-13 {
+                                width: 1260px;
+                                height: 680px;
+                                top: bottom;
+                                left: center;
+                            }
+                            
+                            
+                        
+                            .sty-3-14 {
+                                background-size: 1260px 680px;
+                                background-position: center bottom;
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-14 {
+                                width: 1260px;
+                                height: 680px;
+                                top: bottom;
+                                left: center;
+                            }
+                            
+                            
+                        
+                            .sty-1-18 {
+                                
+                                background-size: 1260px 690px;
+                                
+                                
+                                
+                            }
+                        
+                            .sty-3-19 {
+                                background-size: 1260px 680px;
+                                background-position: center bottom;
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-19 {
+                                width: 1260px;
+                                height: 680px;
+                                top: bottom;
+                                left: center;
+                            }
+                            
+                            
+                        
+                            .sty-3-20 {
+                                background-size: 1260px 680px;
+                                background-position: center bottom;
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-20 {
+                                width: 1260px;
+                                height: 680px;
+                                top: bottom;
+                                left: center;
+                            }
+                            
+                            
+                        
+                            .sty-4-28 {
+                                
+                                
+                                
+                                
+                            }
+                            .sty-3-29 {
+                                background-size: 1260px 1000px;
+                                
+                                
+                                margin-top: 0px;
+                                margin-bottom: 0px;
+                            }
+                            .block-bl2 .absolut-29 {
+                                width: 1260px;
+                                height: 1000px;
+                                
+                                
+                            }
+                            
+                            
+                         }
+                </style>
+                <style>
+                    @media screen and (max-width: 1279px) and (min-width: 1024px){ 
+                            .sty-1-1 {
+                                
+                                
+                                
+                                
+                                
+                            }
+                        
+                            .sty-3-2 {
+                                background-size: 1008px 544px;
+                                background-position: center bottom;
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-2 {
+                                width: 1008px;
+                                height: 544px;
+                                top: bottom;
+                                left: center;
+                            }
+                            
+                        
+                            .sty-4-4 {
+                                
+                                
+                                
+                                
+                            }
+                            .sty-1-5 {
+                                
+                                background-size: 1008px 552px;
+                                
+                                
+                                
+                            }
+                        
+                            .sty-3-6 {
+                                background-size: 1008px 544px;
+                                background-position: center bottom;
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-6 {
+                                width: 1008px;
+                                height: 544px;
+                                top: bottom;
+                                left: center;
+                            }
+                            
+                        
+                            .sty-3-7 {
+                                background-size: 1008px 544px;
+                                background-position: center bottom;
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-7 {
+                                width: 1008px;
+                                height: 544px;
+                                top: bottom;
+                                left: center;
+                            }
+                            
+                        
+                            .sty-1-11 {
+                                
+                                background-size: 1008px 552px;
+                                
+                                
+                                
+                            }
+                        
+                            .sty-3-13 {
+                                background-size: 1008px 544px;
+                                background-position: center bottom;
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-13 {
+                                width: 1008px;
+                                height: 544px;
+                                top: bottom;
+                                left: center;
+                            }
+                            
+                        
+                            .sty-3-14 {
+                                background-size: 1008px 544px;
+                                background-position: center bottom;
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-14 {
+                                width: 1008px;
+                                height: 544px;
+                                top: bottom;
+                                left: center;
+                            }
+                            
+                        
+                            .sty-1-18 {
+                                
+                                background-size: 1008px 552px;
+                                
+                                
+                                
+                            }
+                        
+                            .sty-3-19 {
+                                background-size: 1008px 544px;
+                                background-position: center bottom;
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-19 {
+                                width: 1008px;
+                                height: 544px;
+                                top: bottom;
+                                left: center;
+                            }
+                            
+                        
+                            .sty-3-20 {
+                                background-size: 1008px 544px;
+                                background-position: center bottom;
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-20 {
+                                width: 1008px;
+                                height: 544px;
+                                top: bottom;
+                                left: center;
+                            }
+                            
+                        
+                            .sty-4-28 {
+                                
+                                
+                                
+                                
+                            }
+                            .sty-3-29 {
+                                background-size: 1008px 800px;
+                                
+                                
+                                margin-top: 0px;
+                                margin-bottom: 0px;
+                            }
+                            .block-bl2 .absolut-29 {
+                                width: 1008px;
+                                height: 800px;
+                                
+                                
+                            }
+                            
+                        
+                            .sty-28-100 {
+                                
+                                
+                            }
+                         }
+                </style>
+                <style>
+                    @media screen and (max-width: 1023px) {
+                        body {
+                            padding-top: 1.775rem;
+                        }
+                        #header-iframe {
+                            height: 1.775rem;
+                        }   
+                        
+                            .sty-1-1 {
+                                
+                                background-image: url(../../resource/instance/maintheme_1729130167_D43364.webp);
+                                height: 143.6vw;
+                                background-size: 100vw 143.6vw;
+                                
+                                
+                                
+                            }
+                            .sty-1-1 .title {
+                                color: #ffffff;
+                            }
+                            .sty-1-1 .sub-title {
+                                color: #ffffff;
+                            }
+                        
+                            .sty-3-2 {
+                                background-image: url(../../resource/instance/Frame1597881106_1750058228_0721C2.webp);
+                                
+                                background-size: 90.6vw  143.6vw;
+                                
+                                
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-2 {
+                                
+                                
+                                
+                                
+                            }
+                            
+                            
+                        .sty-4-4 {
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                        }
+                            .sty-1-5 {
+                                
+                                background-image: url(../../resource/instance/maintheme_1750058399_CB897C.webp);
+                                height: 143.6vw;
+                                background-size: 100vw 143.6vw;
+                                
+                                
+                                
+                            }
+                            
+                            
+                        
+                            .sty-3-6 {
+                                background-image: url(../../resource/instance/Frame1597880393_1729070082_E5AD1C.webp);
+                                
+                                background-size: 90.6vw  143.6vw;
+                                
+                                
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-6 {
+                                
+                                
+                                
+                                
+                            }
+                            
+                            
+                        
+                            .sty-3-7 {
+                                background-image: url(../../resource/instance/Frame1597880836_1750059094_8A5138.webp);
+                                
+                                background-size: 90.6vw  143.6vw;
+                                
+                                
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-7 {
+                                
+                                
+                                
+                                
+                            }
+                            
+                            
+                        
+                            .sty-1-11 {
+                                
+                                background-image: url(../../resource/instance/maintheme_1750059417_90EE49.webp);
+                                height: 143.6vw;
+                                background-size: 100vw 143.6vw;
+                                
+                                
+                                
+                            }
+                            
+                            
+                        
+                            .sty-3-13 {
+                                background-image: url(../../resource/instance/Frame1597880397_1729070148_566BEE.webp);
+                                
+                                background-size: 90.6vw  143.6vw;
+                                
+                                
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-13 {
+                                
+                                
+                                
+                                
+                            }
+                            
+                            
+                        
+                            .sty-3-14 {
+                                background-image: url(../../resource/instance/Frame1597880403_1729070162_896F2D.webp);
+                                
+                                background-size: 90.6vw  143.6vw;
+                                
+                                
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-14 {
+                                
+                                
+                                
+                                
+                            }
+                            
+                            
+                        
+                            .sty-1-18 {
+                                
+                                background-image: url(../../resource/instance/maintheme_1750059570_4E76A3.webp);
+                                height: 143.6vw;
+                                background-size: 100vw 143.6vw;
+                                
+                                
+                                
+                            }
+                            
+                            
+                        
+                            .sty-3-19 {
+                                background-image: url(../../resource/instance/Frame1597881243_1754641308_F759DF.webp);
+                                
+                                background-size: 90.6vw  143.6vw;
+                                
+                                
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-19 {
+                                
+                                
+                                
+                                
+                            }
+                            
+                            
+                        
+                            .sty-3-20 {
+                                background-image: url(../../resource/instance/Frame1597880406_1729070212_E76B43.webp);
+                                
+                                background-size: 90.6vw  143.6vw;
+                                
+                                
+                                
+                                
+                                
+                            }
+                            .block-bl2 .absolut-20 {
+                                
+                                
+                                
+                                
+                            }
+                            
+                            
+                        .sty-4-28 {
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                        }
+                            .sty-3-29 {
+                                background-image: url(../../resource/instance/Frame1597881245_1750059803_573487.webp);
+                                
+                                background-size: 90.6vw  143.6vw;
+                                
+                                
+                                
+                                margin-top: 6.25vw;
+                                
+                            }
+                            .block-bl2 .absolut-29 {
+                                
+                                
+                                
+                                
+                            }
+                            
+                            
+                        .oversea-form .oversea-form-cont {
+                            height: 80vh !important;
+                        }
+                    }
+                </style>
+            </head>
+            <body>
+                <iframe id="header-iframe" src="../../common/header_white.html" style="
+                    width: 100%;
+                    border: 0 none;
+                    overflow: scroll;
+                    position: fixed;
+                    z-index: 999;
+                    top: 0;"
+                ></iframe>
+                
+                <div class='block-tl block-tl-ty2 sty-1-1'>
+                                        <div class="block-tl-flex">
+                            
+                            
+                        </div><h2 class='title '>Smart Campus Solutions</h2><div class='sub-title pcshow'>We use AI, IoT, and big data to automate and integrate all campus systems, <br>from classrooms and offices to safety and energy.</div><div class='sub-title mobileshow'>AI, IoT, and big data automate and integrate campus systems.</div>
+                                    </div><div class="sty-3-2 block-bl2 tlstyle ">
+                            <h2 class='title '>Core Management Systems</h2>
+                            
+                            <div class='sub-title pcshow'>Operations Platform, Campus Security, Zone Monitoring, <br>Academic Management, Environment Monitoring, Energy Management.</div>
+                            <div class='sub-title mobileshow'> </div>
+                            
+                            
+                            <div class="block-bl2-flex ">
+                                
+                            </div>
+                            
+                            
+                        </div><div class="sty-4-4 block-txt ">
+                        <div class='desc '>How Smart Campus Solutions Help You</div>
+                        
+                    </div><div class='block-tl  sty-1-5'>
+                                        <div class="block-tl-flex">
+                            
+                            
+                        </div>
+                                    </div><div class="sty-3-6 block-bl2 tlstyle ">
+                            <h2 class='title '>Academic Management</h2>
+                            
+                            <div class='sub-title pcshow'>Nature 7 PRO and controllers enable smart, scheduled control of lighting, projectors, <br>and devices for a convenient teaching environment.</div>
+                            <div class='sub-title mobileshow'>Nature 7 PRO enables smart control of lighting, projectors, and devices.</div>
+                            
+                            
+                            <div class="block-bl2-flex ">
+                                
+                            </div>
+                            
+                            
+                        </div><div class="sty-3-7 block-bl2 tlstyle ">
+                            <h2 class='title '>Environment Monitoring</h2>
+                            
+                            <div class='sub-title pcshow'>Nature X monitors CO₂, temperature, and humidity in real time, sending alerts <br>and adjusting ventilation for optimal learning conditions.</div>
+                            <div class='sub-title mobileshow'>Nature X monitors CO₂, temperature, humidity, and adjusts ventilation for learning.</div>
+                            
+                            
+                            <div class="block-bl2-flex ">
+                                
+                            </div>
+                            
+                            
+                        </div><div class='block-tl  sty-1-11'>
+                                        <div class="block-tl-flex">
+                            
+                            
+                        </div>
+                                    </div><div class="sty-3-13 block-bl2 tlstyle ">
+                            <h2 class='title '>Campus Security Management</h2>
+                            
+                            <div class='sub-title pcshow'>Indoor and outdoor cameras monitor gates, dorms, and perimeters. <br>Access control tracks entries with data synced to EcoLink Platform.</div>
+                            <div class='sub-title mobileshow'>Cameras monitor gates and dorms, access control synced to EcoLink.</div>
+                            
+                            
+                            <div class="block-bl2-flex ">
+                                
+                            </div>
+                            
+                            
+                        </div><div class="sty-3-14 block-bl2 tlstyle ">
+                            <h2 class='title '>Critical Zone Monitoring</h2>
+                            
+                            <div class='sub-title pcshow'>CUBE Environmental Sensor, Water Leakage Sensor monitor temperature, humidity, <br>and water intrusion in critical areas for safe, stable operations.</div>
+                            <div class='sub-title mobileshow'>CUBE sensors monitor temperature, humidity, and water intrusion for safety.</div>
+                            
+                            
+                            <div class="block-bl2-flex ">
+                                
+                            </div>
+                            
+                            
+                        </div><div class='block-tl  sty-1-18'>
+                                        <div class="block-tl-flex">
+                            
+                            
+                        </div>
+                                    </div><div class="sty-3-19 block-bl2 tlstyle ">
+                            <h2 class='title '>Visual Operation Platform</h2>
+                            
+                            <div class='sub-title pcshow'>EcoLink Platform tracks campus equipment status and centralizes security alerts <br>with data-driven insights for predictive maintenance.</div>
+                            <div class='sub-title mobileshow'>EcoLink tracks equipment status, centralizes security, and enables predictive maintenance.</div>
+                            
+                            
+                            <div class="block-bl2-flex ">
+                                
+                            </div>
+                            
+                            
+                        </div><div class="sty-3-20 block-bl2 tlstyle ">
+                            <h2 class='title '>Energy Management System</h2>
+                            
+                            <div class='sub-title pcshow'>LifeSmart’s Human Presence Sensor automates lighting and energy analytics, <br>enabling scheduled, unified, energy-efficient operations across key zones.</div>
+                            <div class='sub-title mobileshow'>LifeSmart’s sensor automates lighting, energy analytics, and efficient zone operations.</div>
+                            
+                            
+                            <div class="block-bl2-flex ">
+                                
+                            </div>
+                            
+                            
+                        </div><div class="sty-4-28 block-txt ">
+                        <div class='desc '>LifeSmart Smart Office Solutions <br>Are Now Deployed Worldwide</div>
+                        
+                    </div><div class="sty-3-29 block-bl2 tlstyle ">
+                            
+                            
+                            
+                            
+                            
+                            
+                            <div class="block-bl2-flex ">
+                                
+                            </div>
+                            
+                            
+                        </div><div class="sty-28-100 oversea-form" id="oversea-form-modal">
+                        <div class="oversea-form-wrapper">
+                            <img class="oversea-form-close" src="../../assets/images/close_mobile_dark.svg"></img>
+                            <div class="oversea-form-cont border border_mb">
+                                <h2 class='title '>Get A Quote</h2>
+                                
+                                <div class="oversea-form-tabbar-title">You are:</div>
+                                <div class="oversea-form-tabbar" >
+                                    <div class="oversea-form-tabbar-item on" data-type="2" >Distributor</div>
+                                    <div class="oversea-form-tabbar-item " data-type="3" >System Integrator</div>
+                                    <div class="oversea-form-tabbar-item " data-type="1" >Real Estate Developer</div>
+                                    <div class="oversea-form-tabbar-item " data-type="4" >End User</div>
+                                </div>
+                                <form id="overseaForm" >  
+                                    <div class="oversea-form-row">
+                                        <div class="item-col2">
+                                            <div class="title">Name:</div>
+                                            <input id="contactName" maxlength="128" name="name" type="text" class="oversea-form-input" placeholder="Your first and last name">
+                                        </div>
+                                        <div class="item-col2 join" >
+                                            <div class="title">Home Size:</div>
+                                            <input id="contactArea" maxlength="64" name="area" type="text" class="oversea-form-input" placeholder="Please enter your home's size in m²">
+                                        </div>
+                                        <div class="item-col2 design" >
+                                            <div class="title">Company:</div>
+                                            <input id="contactCompany" maxlength="128" name="company" type="text" class="oversea-form-input" placeholder="Your company name">
+                                            
+                                        </div>
+                                    </div> 
+                                    <div class="oversea-form-row">
+                                        <div class="item-col2">
+                                            <div class="title">E-mail:</div>
+                                            <input id="contactEmail" maxlength="64" name="concat" type="text" class="oversea-form-input" placeholder="Work email is preferred">
+                                        </div>
+                                        <div class="item-col2 oversea-form-col" >
+                                            <div class="title">Country/Region:</div>
+                                            <input id="contactCountry" maxlength="64" name="country" type="text" class="oversea-form-input" placeholder="Select an option">
+                                            <div id="oversea-form-options" ></div>
+                                        </div>
+                                    </div>
+                                    <div class="oversea-form-row">
+                                        <div class="item-col2">
+                                            <div class="title">Contact Number:</div>
+                                            <input id="contactConcat" maxlength="11" name="concat" type="text" class="oversea-form-input" placeholder="Your phone number or WhatsApp">
+                                        </div>
+                                        <div class="item-col2" >
+                                            <div class="title">You are interested in:</div>
+                                            <div class="oversea-form-tabbar" >
+                                                <div class="oversea-form-tabbar-option"  >Smart Home</div>
+                                                <div class="oversea-form-tabbar-option"   >Gaming Solution</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="oversea-form-row">
+                                        <div class="item-col">
+                                            <div class="title">Your needs:</div>
+                                            <textarea id="contactContent" maxlength="1024" name="content" class="oversea-form-textarea" placeholder="Please describe your needs in detail within 200 words, and we will get back to you as soon as possible." ></textarea>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="oversea-form-tip">We respect your confidentiality and all information is protected.</div>
+                                    <div class="oversea-form-box">
+                                        <button class="oversea-form-button" type="submit">SUBMIT</button>  
+                                    </div>
+                                </form>
+                                <div id="submitSuccess" class="oversea-form-success">0</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                        <script>
+                            window.addEventListener('load', function() {
+                                let loading = false //正在提交表单
+                                console.log("loading::::::::::::", loading);
+                                const option = document.getElementById('oversea-form-options');
+                                var countryList = [{"en":"Abkhazia","nc":"AB"},{"en":"Afghanistan","nc":"AF"},{"en":"Albania","nc":"AL"},{"en":"Algeria","nc":"DZ"},{"en":"Andorra","nc":"AD"},{"en":"Angola","nc":"AO"},
+                                    {"en":"Antigua and Barbuda","nc":"AG"},{"en":"Argentina","nc":"AR"},{"en":"Armenia","nc":"AM"},{"en":"Australia","nc":"AU"},{"en":"Austria","nc":"AT"},{"en":"Azerbaijan","nc":"AZ"},
+                                    {"en":"Bahamas","nc":"BS"},{"en":"Bahrain","nc":"BH"},{"en":"Bangladesh","nc":"BD"},{"en":"Barbados","nc":"BB"},{"en":"Belarus","nc":"BY"},{"en":"Belgium","nc":"BE"},
+                                    {"en":"Belize","nc":"BZ"},{"en":"Benin","nc":"BJ"},{"en":"Bhutan","nc":"BT"},{"en":"Bolivia","nc":"BO"},{"en":"Bosnia and Herzegovina","nc":"BA"},{"en":"Botswana","nc":"BW"},
+                                    {"en":"Brazil","nc":"BR"},{"en":"Brunei","nc":"BN"},{"en":"Bulgaria","nc":"BG"},{"en":"Burkina Faso","nc":"BF"},{"en":"Burundi","nc":"BI"},{"en":"Cambodia","nc":"KH"},
+                                    {"en":"Cameroon","nc":"CM"},{"en":"Canada","nc":"CA"},{"en":"Cabo Verde","nc":"CV"},{"en":"Central African Republic","nc":"CF"},{"en":"Chad","nc":"TD"},{"en":"Chile","nc":"CL"},
+                                    {"en":"China","nc":"CN"},{"en":"Colombia","nc":"CO"},{"en":"Comoros","nc":"KM"},{"en":"Congo (Brazzaville)","nc":"CG"},{"en":"Congo (Kinshasa)","nc":"CD"},{"en":"Cook Islands","nc":"CK"},
+                                    {"en":"Costa Rica","nc":"CR"},{"en":"Côte d'Ivoire","nc":"CI"},{"en":"Croatia","nc":"HR"},{"en":"Cuba","nc":"CU"},{"en":"Cyprus","nc":"CY"},{"en":"Czechia","nc":"CZ"},
+                                    {"en":"Denmark","nc":"DK"},{"en":"Djibouti","nc":"DJ"},{"en":"Dominica","nc":"DM"},{"en":"Dominican Republic","nc":"DO"},{"en":"Ecuador","nc":"EC"},{"en":"Egypt","nc":"EG"},
+                                    {"en":"El Salvador","nc":"SV"},{"en":"Equatorial Guinea","nc":"GQ"},{"en":"Eritrea","nc":"ER"},{"en":"Estonia","nc":"EE"},{"en":"Eswatini","nc":"SZ"},{"en":"Ethiopia","nc":"ET"},
+                                    {"en":"Fiji","nc":"FJ"},{"en":"Finland","nc":"FI"},{"en":"France","nc":"FR"},{"en":"Gabon","nc":"GA"},{"en":"Gambia","nc":"GM"},{"en":"Georgia","nc":"GE"},{"en":"Germany","nc":"DE"},
+                                    {"en":"Ghana","nc":"GH"},{"en":"Greece","nc":"GR"},{"en":"Grenada","nc":"GD"},{"en":"Guatemala","nc":"GT"},{"en":"Guinea","nc":"GN"},{"en":"Guinea-Bissau","nc":"GW"},
+                                    {"en":"Guyana","nc":"GY"},{"en":"Haiti","nc":"HT"},{"en":"Honduras","nc":"HN"},{"en":"Hungary","nc":"HU"},{"en":"Iceland","nc":"IS"},{"en":"India","nc":"IN"},{"en":"Indonesia","nc":"ID"},
+                                    {"en":"Iran","nc":"IR"},{"en":"Iraq","nc":"IQ"},{"en":"Ireland","nc":"IE"},{"en":"Israel","nc":"IL"},{"en":"Italy","nc":"IT"},{"en":"Jamaica","nc":"JM"},{"en":"Japan","nc":"JP"},
+                                    {"en":"Jordan","nc":"JO"},{"en":"Kazakhstan","nc":"KZ"},{"en":"Kenya","nc":"KE"},{"en":"Kiribati","nc":"KI"},{"en":"Kosovo","nc":"XK"},{"en":"Kuwait","nc":"KW"},
+                                    {"en":"Kyrgyzstan","nc":"KG"},{"en":"Laos","nc":"LA"},{"en":"Latvia","nc":"LV"},{"en":"Lebanon","nc":"LB"},{"en":"Lesotho","nc":"LS"},{"en":"Liberia","nc":"LR"},
+                                    {"en":"Libya","nc":"LY"},{"en":"Liechtenstein","nc":"LI"},{"en":"Lithuania","nc":"LT"},{"en":"Luxembourg","nc":"LU"},{"en":"Madagascar","nc":"MG"},{"en":"Malawi","nc":"MW"},
+                                    {"en":"Malaysia","nc":"MY"},{"en":"Maldives","nc":"MV"},{"en":"Mali","nc":"ML"},{"en":"Malta","nc":"MT"},{"en":"Marshall Islands","nc":"MH"},{"en":"Mauritania","nc":"MR"},
+                                    {"en":"Mauritius","nc":"MU"},{"en":"Mexico","nc":"MX"},{"en":"Micronesia","nc":"FM"},{"en":"Moldova","nc":"MD"},{"en":"Monaco","nc":"MC"},{"en":"Mongolia","nc":"MN"},
+                                    {"en":"Montenegro","nc":"ME"},{"en":"Morocco","nc":"MA"},{"en":"Mozambique","nc":"MZ"},{"en":"Myanmar","nc":"MM"},{"en":"Namibia","nc":"NA"},{"en":"Nauru","nc":"NR"},
+                                    {"en":"Nepal","nc":"NP"},{"en":"Netherlands","nc":"NL"},{"en":"New Zealand","nc":"NZ"},{"en":"Nicaragua","nc":"NI"},{"en":"Niger","nc":"NE"},{"en":"Nigeria","nc":"NG"},
+                                    {"en":"Niue","nc":"NU"},{"en":"North Korea","nc":"KP"},{"en":"Northern Cyprus","nc":"NY"},{"en":"North Macedonia","nc":"MK"},{"en":"Norway","nc":"NO"},{"en":"Oman","nc":"OM"},
+                                    {"en":"Pakistan","nc":"PK"},{"en":"Palau","nc":"PW"},{"en":"Palestine","nc":"PS"},{"en":"Panama","nc":"PA"},{"en":"Papua New Guinea","nc":"PG"},{"en":"Paraguay","nc":"PY"},
+                                    {"en":"Peru","nc":"PE"},{"en":"Philippines","nc":"PH"},{"en":"Poland","nc":"PL"},{"en":"Portugal","nc":"PT"},{"en":"Pridnestrovie","nc":"PI"},{"en":"Qatar","nc":"QA"},
+                                    {"en":"Romania","nc":"RO"},{"en":"Russia","nc":"RU"},{"en":"Rwanda","nc":"RW"},{"en":"Saint Christopher and Nevis","nc":"KN"},{"en":"Saint Lucia","nc":"LC"},
+                                    {"en":"Saint Vincent and the Grenadines","nc":"VC"},{"en":"Samoa","nc":"WS"},{"en":"San Marino","nc":"SM"},{"en":"São Tomé and Príncipe","nc":"ST"},{"en":"Saudi Arabia","nc":"SA"},
+                                    {"en":"Senegal","nc":"SN"},{"en":"Serbia","nc":"RS"},{"en":"Seychelles","nc":"SC"},{"en":"Sierra Leone","nc":"SL"},{"en":"Singapore","nc":"SG"},{"en":"Slovakia","nc":"SK"},
+                                    {"en":"Slovenia","nc":"SI"},{"en":"Solomon Islands","nc":"SB"},{"en":"Somalia","nc":"SO"},{"en":"Somaliland","nc":"OA"},{"en":"South Africa","nc":"ZA"},{"en":"South Korea","nc":"KR"},
+                                    {"en":"South Ossetia","nc":"SU"},{"en":"South Sudan","nc":"SS"},{"en":"Spain","nc":"ES"},{"en":"Sri Lanka","nc":"LK"},{"en":"Sudan","nc":"SD"},{"en":"Suriname","nc":"SR"},
+                                    {"en":"Sweden","nc":"SE"},{"en":"Switzerland","nc":"CH"},{"en":"Syria","nc":"SY"},{"en":"Taiwan, China","nc":"TW"},{"en":"Tajikistan","nc":"TJ"},{"en":"Tanzania","nc":"TZ"},
+                                    {"en":"Thailand","nc":"TH"},{"en":"Timor-Leste","nc":"TL"},{"en":"Togo","nc":"TG"},{"en":"Tonga","nc":"TO"},{"en":"Trinidad and Tobago","nc":"TT"},{"en":"Tunisia","nc":"TN"},
+                                    {"en":"Turkey","nc":"TR"},{"en":"Turkmenistan","nc":"TM"},{"en":"Tuvalu","nc":"TV"},{"en":"Uganda","nc":"UG"},{"en":"Ukraine","nc":"UA"},{"en":"United Arab Emirates","nc":"AE"},
+                                    {"en":"United Kingdom","nc":"GB"},{"en":"United States","nc":"US"},{"en":"Uruguay","nc":"UY"},{"en":"Uzbekistan","nc":"UZ"},{"en":"Vanuatu","nc":"VU"},{"en":"Vatican City","nc":"VA"},
+                                    {"en":"Venezuela","nc":"VE"},{"en":"Vietnam","nc":"VN"},{"en":"Western Sahara","nc":"EH"},{"en":"Yemen","nc":"YE"},{"en":"Zambia","nc":"ZM"},{"en":"Zimbabwe","nc":"ZW"},
+                                    {"en":"Akrotiri and Dhekelia","nc":"AA"},{"en":"Aland","nc":"AX"},{"en":"American Samoa","nc":"AS"},{"en":"Anguilla","nc":"AI"},{"en":"Aruba","nc":"AW"},{"en":"Bermuda","nc":"BM"},
+                                    {"en":"Cayman Islands","nc":"KY"},{"en":"Christmas Island","nc":"CX"},{"en":"Cocos (Keeling) Islands","nc":"CC"},{"en":"Curaçao","nc":"CW"},
+                                    {"en":"Falkland Islands (Islas Malvinas)","nc":"FK"},{"en":"Faroe Islands","nc":"FO"},{"en":"French Polynesia","nc":"PF"},{"en":"Gibraltar","nc":"GI"},{"en":"Greenland","nc":"GL"},
+                                    {"en":"Guam","nc":"GU"},{"en":"Guernsey","nc":"GG"},{"en":"Hong Kong, China","nc":"HK"},{"en":"Isle of Man","nc":"IM"},{"en":"Jersey","nc":"JE"},{"en":"Macau, China","nc":"MO"},
+                                    {"en":"Montserrat","nc":"MS"},{"en":"New Caledonia","nc":"NC"},{"en":"Norfolk Island","nc":"NF"},{"en":"Northern Mariana Islands","nc":"MP"},{"en":"Pitcairn Islands","nc":"PN"},
+                                    {"en":"Puerto Rico","nc":"PR"},{"en":"Saint Barthelemy","nc":"BL"},{"en":"Saint Helena, Ascension and Tristan da Cunha","nc":"SH"},{"en":"Saint Pierre and Miquelon","nc":"PM"},
+                                    {"en":"Saint Martin","nc":"MF"},{"en":"Sint Maarten","nc":"SX"},{"en":"Svalbard and Jan Mayen","nc":"SJ"},{"en":"Tokelau","nc":"TK"},{"en":"Turks and Caicos Islands","nc":"TC"},
+                                    {"en":"Virgin Islands, British","nc":"VG"},{"en":"Virgin Islands, United States","nc":"VI"},{"en":"Wallis and Futuna","nc":"WF"}]
+                                $(".oversea-form-close").on("click", function (e) {
+                                    $("#oversea-form-modal").removeClass("on");
+                                })
+                                $('#overseaForm').on('submit', function(event) {  
+                                    event.preventDefault(); // 阻止表单的默认提交行为  
+                                    if (loading) return;
+                                    loading = true;
+                                    var name = $('#contactName').val();  //名字
+                                    var company = $('#contactCompany').val();  //公司
+                                    var area = $('#contactArea').val();  //面积
+                                    var concat = $('#contactConcat').val();  //联系电话
+                                    var email = $('#contactEmail').val();  //邮箱
+                                    var content = $('#contactContent').val();  //内容
+                                    var country = $('#contactCountry').attr("data-value");  //国家
+                                    let type = $('.oversea-form-tabbar-item.on').text();
+                                    let interested = ""
+                                    $('.oversea-form-tabbar-option.on').each((index, item) => {
+                                        if(interested) interested += ",";
+                                        interested += $(item).text();
+                                    });
+                                    let nonce = 'xxxxxxxxxxxx4xxxyxxxxxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+                                        var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+                                        return v.toString(16);
+                                    });
+                                    if(!name || !concat || !email || !content || !country){
+                                        if(!name ) $(".oversea-form-success").text("The name is a required field!")
+                                        else if(!concat ) $(".oversea-form-success").text("Contact Number is a required field!")
+                                        else if(!email) $(".oversea-form-success").text("The email is a required field!")
+                                        else if(!content) $(".oversea-form-success").text("The content is a required field!")
+                                        else if(!country) $(".oversea-form-success").text("The country/Region is a required field!")
+                                        $(".oversea-form-success").addClass("show")
+                                        if(window.custom_timeout) clearTimeout(window.custom_timeout)
+                                        window.custom_timeout = setTimeout(function() {
+                                            $(".oversea-form-success").removeClass("show")
+                                        }, 4000)
+                                        loading = false;
+                                        return;
+                                    }
+                                    if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$/.test(email)) {
+                                        $(".oversea-form-success").text("Please confirm the format of the email address.")
+                                        $(".oversea-form-success").addClass("show")
+                                        if (window.custom_timeout) clearTimeout(window.custom_timeout)
+                                        window.custom_timeout = setTimeout(function () {
+                                            $(".oversea-form-success").removeClass("show")
+                                        }, 4000)
+                                        loading = false;
+                                        return;
+                                    }
+                                    const visitSource = getVisitSourceData();
+                                    let dataForNewCrm = {}
+                                    dataForNewCrm['visit_category'] = visitSource.visit_category;
+                                    dataForNewCrm['visit_source'] = visitSource.visit_source;
+                                    dataForNewCrm['visit_medium'] = visitSource.visit_medium;
+                                    if (ga_client_id) {
+                                        dataForNewCrm["client_id"] = ga_client_id;
+                                    } else {
+                                        dataForNewCrm["client_id"] = "";
+                                    }
+                                    let req = {
+                                        params: {
+                                            name: name,
+                                            company: company,
+                                            area: area,
+                                            concat: concat,
+                                            content: content,
+                                            biz_type: type,
+                                            biz_intended: interested,
+                                            country: country,
+                                            email: email,
+                                            ...dataForNewCrm
+                                        },
+                                        sys: {
+                                            namespace: "Ls.Pub.Service.Consultation",
+                                            method: "CreateOverseasConsultation",
+                                            appkey: "lhoKALyASW8KPgCvgr2UVty49Yy9pagR",
+                                            apptoken: "XSslY15qx7p4zqZ80GKFj6t66iHAVpuq",
+                                            ts: Math.round(new Date().getTime()/1000),
+                                            version: "1.0",
+                                            nonce: nonce
+                                        }
+                                    }
+                                    $.ajax({
+                                        url: window.location.origin + "/mweb/app",
+                                        type: "POST",
+                                        dataType: "json",
+                                        contentType: false,    
+                                        data: JSON.stringify(req),
+                                        processData: false,
+                                        success: function(response) {  
+                                            // 请求成功时执行的函数  
+                                            loading = false;
+                                            if(response.code == 0) {
+                                                window.dataLayer = window.dataLayer || [];
+                                                window.dataLayer.push({
+                                                    'event': 'inquiry_success',
+                                                    'form_location': window.location.href, // 自动抓取提交时的完整 URL
+                                                    'form_type': 'popup' // 研发可以根据实际场景，在弹窗里写 'popup'，在联系页面写 'contact_page'
+                                                });
+                                                $(".oversea-form-success").text("Your submission has been successful. Our customer service will contact you as soon as possible!")
+                                                $(".oversea-form-success").addClass("show")
+                                                if(window.custom_timeout) clearTimeout(window.custom_timeout)
+                                                window.custom_timeout = setTimeout(function() {
+                                                    $(".oversea-form-success").removeClass("show")
+                                                }, 4000)
+                                                $('#overseaForm')[0].reset(); 
+                                                $("#oversea-form-modal").removeClass("on"); 
+                                                window.location.href = "../../other/Thank-you/index.html";
+                                            }else {
+                                                $(".oversea-form-success").text(response.message)
+                                                $(".oversea-form-success").addClass("show")
+                                                if(window.custom_timeout) clearTimeout(window.custom_timeout)
+                                                window.custom_timeout = setTimeout(function() {
+                                                    $(".oversea-form-success").removeClass("show")
+                                                }, 4000)
+                                            }
+                                            
+                                        },  
+                                        error: function(xhr, status, error) {  
+                                            // 请求失败时执行的函数  
+                                            loading = false;
+                                            $(".oversea-form-success").text('Error: ' + error)
+                                            $(".oversea-form-success").addClass("show")
+                                            if(window.custom_timeout) clearTimeout(window.custom_timeout)
+                                            window.custom_timeout = setTimeout(function() {
+                                                $(".oversea-form-success").removeClass("show")
+                                            }, 4000)
+                                        } 
+                                    })
+                                }); 
+                                $('.oversea-form-tabbar-item').on("click", function() {
+                                    $(this).addClass("on");
+                                    $(this).siblings().removeClass("on");
+                                    let idx = $(this).index();
+                                    if(idx !== 3) {
+                                        $(".design").css("display", "block")
+                                        $(".join").css("display", "none")
+                                    }else {
+                                        $(".design").css("display", "none")
+                                        $(".join").css("display", "block")
+                                    }
+                                })
+                                $('.oversea-form-tabbar-option').on("click", function() {
+                                    $(this).toggleClass("on");
+                                })
+                                $("#contactCountry").on("input", function() {
+                                    let country = []
+                                    let val = ($(this).val() || "").replace(/^s+|s+$/g, "");
+                                    if(!val){
+                                        country = countryList
+                                    }else {
+                                        country = countryList.filter(item => (item.en).toLowerCase().indexOf(val.toLowerCase()) > -1)
+                                    }
+                                    option.innerHTML = "";
+                                    if(country.length > 0){
+                                        country.forEach((item, i) => {
+                                            const op = document.createElement('div');
+                                            op.className = "oversea-form-option"
+                                            op.innerHTML = item.en; // 选项内容
+                                            op.setAttribute('data-value', item.nc); // 选项值
+                                            option.appendChild(op);
+                                        })
+                                    }else {
+                                        const op = document.createElement('div');
+                                        op.className = "oversea-form-empty"
+                                        op.innerHTML = "no data"; // 选项内容
+                                        option.appendChild(op)
+                                    }
+                                    
+                                    $("#oversea-form-options").addClass("show")
+                                    
+                                    $(".oversea-form-option").on("click", function() {
+                                        let v = $(this).text();
+                                        $("#contactCountry").val(v)
+                                        $("#contactCountry").attr("data-value", v)
+                                        $("#oversea-form-options").removeClass("show")
+                                    })
+
+                                })
+                                $("#contactCountry").on("blur", function() {
+                                    setTimeout(function(){
+                                        $("#oversea-form-options").removeClass("show")
+                                        $("#contactCountry").val($("#contactCountry").attr("data-value"))
+                                    }, 500)
+                                })
+                                $("#contactCountry").on("focus", function() {
+                                    $("#oversea-form-options").addClass("show")
+                                })
+
+                                countryList.forEach((item, i) => {
+                                    const op = document.createElement('div');
+                                    op.className = "oversea-form-option"
+                                    op.innerHTML = item.en; // 选项内容
+                                    // op.setAttribute('data-value', item.nc); // 选项值
+                                    option.appendChild(op);
+                                })
+                                $(".oversea-form-option").on("click", function() {
+                                    let v = $(this).text();
+                                    $("#contactCountry").val(v)
+                                    $("#contactCountry").attr("data-value", v)
+                                    $("#oversea-form-options").removeClass("show")
+                                })
+                                    
+                            });
+                        </script>
+                <div class="contact-us"><img src="../../assets/images/form_icon.png" /></div>
+
+                <iframe id="footer-iframe" src="../../common/footer_white.html" style="width: 100%;;border: 0 none;"></iframe>
+                <script>
+                    (function () {
+                        const onloadAnimation = (idx, path) => {
+                            let node = document.getElementsByClassName("anim-box")[idx]
+                            let attr = node.attributes;
+                            let loop = true, speed = 1;
+                            if (attr && attr.lottie && attr.lottie.value) {
+                                let lottie = attr.lottie.value
+                                let arrs = lottie.split(";");
+                                arrs.forEach((item) => {
+                                    if(item) {
+                                        let arr = item.split(":");
+                                        if (arr[0] == "loop") loop = arr[1] == "false" ? false : true;
+                                        if (arr[0] == "speed") speed = Number(arr[1])
+                                    }
+                                })
+                            }
+                            var animData = {
+                                wrapper: node,
+                                animType: 'svg',
+                                loop,
+                                prerender: true,
+                                autoplay: false, // 初始不自动播放 
+                                path: path,
+
+                            };
+                            let anim = bodymovin.loadAnimation(animData);
+                            anim.setSpeed(speed); 
+                            // 开始播放动画  
+                            anim.play(); 
+                        }
+
+                        let animBoxs = $(".anim-box");
+                        for (var i = 0, length = animBoxs.length; i < length; i++) {
+                            onloadAnimation(i, $(".anim-box")[i].getAttribute("path"))
+                        }
+
+
+                        var iframe1 = document.getElementById('footer-iframe'); 
+                        iframe1.onload = function() {  
+                            var iframeDoc = iframe1.contentDocument || iframe1.contentWindow.document; 
+                            var iframeHeight = iframeDoc.body.scrollHeight; 
+                            var iframeWidth = iframeDoc.body.scrollWidth;
+                            // 你可以在这里添加代码来调整iframe的高度或执行其他操作  
+                            iframe1.style.height = iframeWidth >= 1024 ? (iframeHeight + 200) + 'px' : 'calc(15.625vw + ' + iframeHeight + 'px )' ;  //200是上下margin
+                        };  
+                    
+
+                        
+                        $(".block-tlTab-bar-item").on("click", function () {
+                            $(this).addClass("on")
+                            $(this).siblings().removeClass("on")
+                            $(this).parent().prev().css("transform", `translateX(${$(this).index() * -100}vw)`)
+                        })
+
+                        $(".img_box").on("click", function (e) {
+                            e.stopPropagation();  
+                            let index = $(this).index();
+                            let src = $(this).children("img").attr('src');
+                            $(this).parent().prev().children("img").attr("src", src)
+                            $(this).addClass("on")
+                            $(this).siblings().removeClass("on")
+                        })
+                        if(false) {
+                            let arr = []
+                            let a_str = []
+                            a_str.forEach((item) => {
+                                let anchorElement = document.getElementById(item.id);
+                                if (anchorElement && anchorElement.offsetTop) {
+                                    arr.push({top: anchorElement.offsetTop, id: item.id})
+                                }
+                            })
+                            $(window).scroll(function() {  
+                                var scroll = $(window).scrollTop(); // 获取滚动条垂直位置  
+                                let index = ""
+                                for(var i = 0, len = arr.length; i < len; i++) {
+                                    if(arr[i+1]){
+                                        if(scroll >= arr[i].top-30 && scroll < arr[i+1].top-30) {
+                                            index = i
+                                            break;
+                                        }
+                                    }else {
+                                        if(scroll >= arr[i].top-30) {
+                                            index = i
+                                            break;
+                                        }
+                                    }
+                                }
+                                if(index || index === 0) {
+                                    if($(".nav-anchor-cont a").eq(index).hasClass("on")){
+
+                                    }else {
+                                        $(".nav-anchor-cont a").removeClass("on")
+                                        $(".nav-anchor-cont a").eq(index).addClass("on")
+                                    }
+
+                                }
+                            }); 
+                            $(".nav-anchor-cont a").on("click", function (e) {
+                                $(this).addClass("on");
+                                $(this).siblings().removeClass("on")
+                                let id = $(this).attr("data");
+                                let item = arr.find(item => item.id == id);
+                                $('html, body').scrollTop(item.top);
+                            })
+                        }
+                        $('.block-form-tabbar-item').on("click", function() {
+                            $(this).addClass("on");
+                            $(this).siblings().removeClass("on");
+                            let idx = $(this).index();
+                            $(".block-form-success").text(idx)
+                            if(idx == 2) {
+                                $(".design").css("display", "block")
+                                $(".join").css("display", "none")
+                            }else {
+                                $(".join").css("display", "block")
+                                $(".design").css("display", "none")
+                            }
+                        })
+                        $(".contact-us").on("click", function() {    //弹框出问答
+                            $("#oversea-form-modal").addClass("on")
+                        })
+
+                    })()
+
+                    window.addEventListener('message', (event) => {
+                        if(event.data){ 
+                            if(event.data.k == "header"){
+                                var iframe = document.getElementById('header-iframe'); 
+                                iframe.style.height = event.data.v;  //200是上下margin
+                                if(event.data.v == "100vh"){
+                                    $("body").css("overflow", "hidden")
+                                }else {
+                                $("body").css("overflow", "auto")
+                                }
+                            }else if(event.data.k == "footer"){
+                                var iframe = document.getElementById('footer-iframe'); 
+                                iframe.style.height = event.data.v;  //200是上下margin
+                            }
+                          
+
+
+                        }
+                    });  
+                </script>
+            </body>
+        
+<!-- Mirrored from iot.ilifesmart.com/solutions/smart-campus/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Apr 2026 01:10:34 GMT -->
+</html>
